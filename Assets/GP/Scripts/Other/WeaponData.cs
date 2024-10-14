@@ -11,4 +11,17 @@ public class WeaponData : ScriptableObject
     public int INT_Damage;
     public float FLO_BulletDispersion;
     public int INT_BulletToShot;
+    
+    public WeaponData Clone()
+    {
+        WeaponData clone = ScriptableObject.CreateInstance<WeaponData>();
+        clone.STR_WeaponName = this.STR_WeaponName;
+        clone.INT_BulletclipMax = this.INT_BulletclipMax;
+        clone.FLO_ReloadingTime = this.FLO_ReloadingTime;
+        clone.INT_Damage = this.INT_Damage;
+        clone.FLO_BulletDispersion = this.FLO_BulletDispersion;
+        clone.INT_BulletToShot = this.INT_BulletToShot;
+        return clone;
+    }
 }
+

@@ -14,11 +14,7 @@ public class BulletController : MonoBehaviour
     public void ShootBullet(int BulletToShot = 1, float BulletDisperion = 0)
     {
         Camera mainCamera = Camera.main;
-        if (mainCamera == null)
-        {
-            Debug.LogError("Caméra principale non trouvée");
-            return;
-        }
+        if (mainCamera == null) { return; }
 
         Vector3 V3_Origin = mainCamera.transform.position;
 

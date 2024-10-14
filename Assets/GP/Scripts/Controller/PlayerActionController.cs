@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAction : MonoBehaviour
+public class PlayerActionController : MonoBehaviour
 {
     private BulletController bulletController;
 
