@@ -7,6 +7,9 @@ public class PlayerAction : MonoBehaviour
 {
     private BulletController bulletController;
 
+    public int Bullet;
+    public float Disperion;
+
     private void Awake()
     {
         bulletController = FindObjectOfType<BulletController>();
@@ -16,7 +19,7 @@ public class PlayerAction : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            bulletController.ShootBullet();
+            bulletController.ShootBullet(Bullet, Disperion);
         }
     }
 }
