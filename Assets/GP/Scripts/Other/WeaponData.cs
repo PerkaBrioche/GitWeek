@@ -11,6 +11,8 @@ public class WeaponData : ScriptableObject
     public int INT_Damage;
     public float FLO_BulletDispersion;
     public int INT_BulletToShot;
+    public float FLO_TimeBeetweenShoot;
+    public Vector2 ShakeValue;
     
     public WeaponData Clone()
     {
@@ -21,6 +23,8 @@ public class WeaponData : ScriptableObject
         clone.INT_Damage = this.INT_Damage;
         clone.FLO_BulletDispersion = this.FLO_BulletDispersion;
         clone.INT_BulletToShot = this.INT_BulletToShot;
+        clone.FLO_TimeBeetweenShoot = this.FLO_TimeBeetweenShoot;
+        clone.ShakeValue = this.ShakeValue;
         return clone;
     }
 }

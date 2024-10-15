@@ -11,7 +11,7 @@ public class BulletController : MonoBehaviour
     {
     }
 
-    public void ShootBullet(int BulletToShot = 1, float BulletDisperion = 0)
+    public void ShootBullet(int BulletToShot, float BulletDisperion, Vector2 ShakeValue)
     {
         Camera mainCamera = Camera.main;
         if (mainCamera == null) { return; }
@@ -35,7 +35,7 @@ public class BulletController : MonoBehaviour
             {
                 Debug.Log("Objet touché : " + hit.collider.name);
             }
-            ShakeManager.instance.ShakeCamera(0.25f, 0.1f);
+            ShakeManager.instance.ShakeCamera(ShakeValue.x, ShakeValue.y);
         }
     }
 }

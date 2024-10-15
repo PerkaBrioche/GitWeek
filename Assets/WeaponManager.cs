@@ -7,6 +7,7 @@ public class WeaponManager : MonoBehaviour
 {
     public static WeaponManager Instance;
     [NonSerialized] public WeaponData PlayerWeapon;
+    public WeaponController WeaponController;
 
     private void Awake()
     {
@@ -14,6 +15,8 @@ public class WeaponManager : MonoBehaviour
         {
             Instance = this;
         }
+
+        NewWeapon(0);
     }
     public List<WeaponData> LIST_AllWeapons;
     
@@ -24,5 +27,6 @@ public class WeaponManager : MonoBehaviour
     public void NewWeapon(int Index)
     {
         PlayerWeapon = LIST_AllWeapons[Index].Clone();
+        WeaponController.UpdateWeapon(PlayerWeapon);
     }
 }
