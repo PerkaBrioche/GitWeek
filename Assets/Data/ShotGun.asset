@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: ShotGun
   m_EditorClassIdentifier: 
   STR_WeaponName: ShotGun
-  INT_BulletclipMax: 8
-  FLO_ReloadingTime: 3
+  INT_BulletclipMax: 4
+  FLO_ReloadingTime: 1.3
   INT_Damage: 10
   FLO_BulletDispersion: 0.3
   INT_BulletToShot: 4
+  FLO_TimeBeetweenShoot: 1
+  FLO_WeaponRange: 15
+  ShakeValue: {x: 1.3, y: 0.3}

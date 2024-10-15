@@ -38,7 +38,6 @@ public class ShakeManager : MonoBehaviour
 
             yield return null;
         }
-
         Camera.main.transform.localPosition = originalPos;
     }
 }

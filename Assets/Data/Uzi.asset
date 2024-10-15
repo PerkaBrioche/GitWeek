@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4466900ef778b194883adf1a5dccc077, type: 3}
-  m_Name: Revolver
+  m_Name: Uzi
   m_EditorClassIdentifier: 
-  STR_WeaponName: Revolver
-  INT_BulletclipMax: 6
-  FLO_ReloadingTime: 2
-  INT_Damage: 20
-  FLO_BulletDispersion: 0
+  STR_WeaponName: Uzi
+  INT_BulletclipMax: 25
+  FLO_ReloadingTime: 1.4
+  INT_Damage: 8
+  FLO_BulletDispersion: 0.1
   INT_BulletToShot: 1
-  FLO_TimeBeetweenShoot: 0.8
-  FLO_WeaponRange: 1000
-  ShakeValue: {x: 0.7, y: 0.17}
+  FLO_TimeBeetweenShoot: 0.09
+  FLO_WeaponRange: 20
+  ShakeValue: {x: 0.3, y: 0.15}
