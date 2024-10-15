@@ -20,4 +20,4 @@ MonoBehaviour:
   INT_BulletToShot: 1
   FLO_TimeBeetweenShoot: 0.09
   FLO_WeaponRange: 20
-  ShakeValue: {x: 0.3, y: 0.15}
+  ShakeValue: {x: 0.3, y: 0.13}

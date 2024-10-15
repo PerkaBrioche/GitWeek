@@ -12,6 +12,7 @@ public class ShakeManager : MonoBehaviour
             instance = this;
         }
     }
+
     public void ShakeCamera(float intensity, float duration)
     {
         StartCoroutine(Shake(intensity, duration));
@@ -20,7 +21,7 @@ public class ShakeManager : MonoBehaviour
     private IEnumerator Shake(float intensity, float duration)
     {
         float elapsed = 0.0f;
-        Vector3 originalPos = Camera.main.transform.localPosition;
+        Vector3 originalPos = Camera.main.transform.position;
 
         while (elapsed < duration)
         {
@@ -28,16 +29,16 @@ public class ShakeManager : MonoBehaviour
 
             float offsetX = (Mathf.PerlinNoise(Time.time * 10f, 0f) - 0.5f) * intensity;
             float offsetY = (Mathf.PerlinNoise(0f, Time.time * 10f) - 0.5f) * intensity;
-            float offsetZ = (Mathf.PerlinNoise(Time.time * 10f, Time.time * 10f) - 0.5f) * intensity;
 
-            Camera.main.transform.localPosition = new Vector3(
+            Camera.main.transform.position = new Vector3(
                 originalPos.x + offsetX, 
                 originalPos.y + offsetY, 
-                originalPos.z + offsetZ
+                originalPos.z 
             );
 
             yield return null;
         }
-        Camera.main.transform.localPosition = originalPos;
+
+        Camera.main.transform.position = originalPos;
     }
 }
