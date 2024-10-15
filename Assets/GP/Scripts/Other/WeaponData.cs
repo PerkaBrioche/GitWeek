@@ -12,6 +12,7 @@ public class WeaponData : ScriptableObject
     public float FLO_BulletDispersion;
     public int INT_BulletToShot;
     public float FLO_TimeBeetweenShoot;
+    public float FLO_WeaponRange;
     public Vector2 ShakeValue;
     
     public WeaponData Clone()
@@ -25,6 +26,7 @@ public class WeaponData : ScriptableObject
         clone.INT_BulletToShot = this.INT_BulletToShot;
         clone.FLO_TimeBeetweenShoot = this.FLO_TimeBeetweenShoot;
         clone.ShakeValue = this.ShakeValue;
+        clone.FLO_WeaponRange = this.FLO_WeaponRange;
         return clone;
     }
 }

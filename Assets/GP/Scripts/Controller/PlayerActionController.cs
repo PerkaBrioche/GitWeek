@@ -32,7 +32,7 @@ public class PlayerActionController : MonoBehaviour
         {
             if (WeaponController.HasBullet() && !WeaponController.IsReloading() && !WeaponController.TimingBeetween()) 
             {
-                bulletController.ShootBullet(WeaponController.ActualWeapon.INT_BulletToShot, WeaponController.ActualWeapon.FLO_BulletDispersion, WeaponController.ActualWeapon.ShakeValue);
+                bulletController.ShootBullet(WeaponController.ActualWeapon);
                 WeaponController.UpdateClip();
                 WeaponController.LaunchShootTime();
             }

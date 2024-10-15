@@ -19,4 +19,5 @@ MonoBehaviour:
   FLO_BulletDispersion: 0.3
   INT_BulletToShot: 4
   FLO_TimeBeetweenShoot: 1
+  FLO_WeaponRange: 15
   ShakeValue: {x: 1.3, y: 0.3}
