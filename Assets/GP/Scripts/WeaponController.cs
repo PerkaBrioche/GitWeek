@@ -7,12 +7,14 @@ using UnityEngine;
 public class WeaponController : MonoBehaviour
 { 
     [NonSerialized] public WeaponData ActualWeapon;
-    private int INT_Clip;
+    [NonSerialized] public List<WeaponData> LIST_PlayerWeapons;
     private bool BOOL_IsReloading;
     private bool BOOL_TimingBeetween;
 
     public TextMeshProUGUI TMP_Clip;
     public TextMeshProUGUI TMP_WeaponName;
+    
+    
 
     public void Reaload()
     {
@@ -26,22 +28,28 @@ public class WeaponController : MonoBehaviour
     {
         yield return new WaitForSeconds(ActualWeapon.FLO_ReloadingTime);
         BOOL_IsReloading = false;
-        INT_Clip = ActualWeapon.INT_BulletclipMax;
+        ActualWeapon.INT_ActualClip = ActualWeapon.INT_BulletclipMax;
         UpdateClip(0);
     }
 
     public void UpdateWeapon(WeaponData NewWeapon)
     {
+        LIST_PlayerWeapons.Add(NewWeapon);
+        ChangeWeapon(NewWeapon);
+    }
+
+    public void ChangeWeapon(WeaponData NewWeapon)
+    {
         ActualWeapon = NewWeapon;
-        INT_Clip = ActualWeapon.INT_BulletclipMax;
+        ActualWeapon.INT_ActualClip = ActualWeapon.INT_BulletclipMax;
         UpdateClip(0);
         TMP_WeaponName.text = ActualWeapon.STR_WeaponName;
     }
 
     public void UpdateClip(int ClipToSuppr = 1)
     {
-        INT_Clip-= ClipToSuppr;
-        TMP_Clip.text = "Clip : " + INT_Clip;
+        ActualWeapon.INT_ActualClip -= ClipToSuppr;
+        TMP_Clip.text = "Clip : " + ActualWeapon.INT_ActualClip;
     }
     
     public void LaunchShootTime()
@@ -58,7 +66,7 @@ public class WeaponController : MonoBehaviour
 
     public bool HasBullet()
     {
-        if (INT_Clip > 0)
+        if (ActualWeapon.INT_ActualClip > 0)
         {
             return true;
         }

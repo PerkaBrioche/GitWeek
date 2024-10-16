@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4466900ef778b194883adf1a5dccc077, type: 3}
   m_Name: Revolver
   m_EditorClassIdentifier: 
+  BOOL_CAC: 0
+  OneHanded: 1
   STR_WeaponName: Revolver
   INT_BulletclipMax: 6
   FLO_ReloadingTime: 2

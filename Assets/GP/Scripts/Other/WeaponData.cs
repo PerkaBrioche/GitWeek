@@ -6,8 +6,10 @@ using UnityEngine;
 public class WeaponData : ScriptableObject
 {
     public bool BOOL_CAC;
+    public bool OneHanded;
     public string STR_WeaponName;
     public int INT_BulletclipMax;
+    public int INT_ActualClip;
     public float FLO_ReloadingTime;
     public int INT_Damage;
     public float FLO_BulletDispersion;
@@ -20,8 +22,10 @@ public class WeaponData : ScriptableObject
     {
         WeaponData clone = ScriptableObject.CreateInstance<WeaponData>();
         clone.STR_WeaponName = this.STR_WeaponName;
+        clone.OneHanded = this.OneHanded;
         clone.BOOL_CAC = this.BOOL_CAC;
         clone.INT_BulletclipMax = this.INT_BulletclipMax;
+        clone.INT_ActualClip = this.INT_ActualClip;
         clone.FLO_ReloadingTime = this.FLO_ReloadingTime;
         clone.INT_Damage = this.INT_Damage;
         clone.FLO_BulletDispersion = this.FLO_BulletDispersion;

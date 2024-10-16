@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
         FirstPersonController.playerCanMove = false;
         PlayerActionController.enabled = false;
         Cursor.lockState = CursorLockMode.Confined;
+        FirstPersonController.transform.GetComponent<Rigidbody>().isKinematic = true;
     }
 
     public void IncremantGenerator()

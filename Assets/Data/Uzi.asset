@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4466900ef778b194883adf1a5dccc077, type: 3}
   m_Name: Uzi
   m_EditorClassIdentifier: 
+  BOOL_CAC: 0
+  OneHanded: 1
   STR_WeaponName: Uzi
   INT_BulletclipMax: 25
   FLO_ReloadingTime: 1.4
