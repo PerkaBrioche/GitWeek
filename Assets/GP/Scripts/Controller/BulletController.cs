@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class BulletController : MonoBehaviour
 {
-    public Transform TRA_OriginPosition;
+    public Transform TRA_BulletOrigin;
+    public GameObject PART_Impact;
+    public GameObject PREF_Bullet;
 
     private void Start()
     {
@@ -12,6 +14,7 @@ public class BulletController : MonoBehaviour
 
     public void ShootBullet(WeaponData Weapon)
     {
+        bool shaked = false;
         Camera mainCamera = Camera.main;
         if (mainCamera == null) { return; }
 
@@ -29,12 +32,27 @@ public class BulletController : MonoBehaviour
 
             RaycastHit hit;
             Debug.DrawRay(V3_Origin, shootDirection * Weapon.FLO_WeaponRange, Color.red, 1.0f);
+            var Bullet = Instantiate(PREF_Bullet, TRA_BulletOrigin.position, transform.rotation);
+            Bullet.GetComponent<Bullet>().StartBullet(shootDirection);
 
             if (Physics.Raycast(V3_Origin, shootDirection, out hit, Weapon.FLO_WeaponRange))
             {
-                Debug.Log("Objet touché : " + hit.collider.name);
+                RayTouch(hit);
             }
+            if(shaked){return;}
+            shaked = true;
             ShakeManager.instance.ShakeCamera(Weapon.ShakeValue.x, Weapon.ShakeValue.y);
+        }
+    }
+
+
+    public void RayTouch(RaycastHit hit)
+    {
+        string tag = hit.transform.tag;
+        Vector3 hitPosition = hit.point;
+        if (tag == "Obstacle")
+        {
+            Instantiate(PART_Impact, hitPosition, hit.transform.rotation);
         }
     }
 }

@@ -6,10 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="2e0886e1-1837-4af9-863f-1de15a42bd92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GitWeek/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GitWeek/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CameraRotation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CameraRotation.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/Revolver.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Revolver.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/ShotGun.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/ShotGun.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/Uzi.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Uzi.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/BulletController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/BulletController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Manager/ShakeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Manager/ShakeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GabrielScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GabrielScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeaponController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeaponController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeaponManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WeaponManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,11 +32,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/lemer/Bureau/IIM/A2/PROG/C#/Projet/GitWeekFinal/GitWeek/Assets/GP/Scripts/Controller/BulletController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ArmController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DestroyHimself.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GP/Scripts/Controller/PlayerActionController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GP/Scripts/Other/WeaponData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/WeaponController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/WeaponManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -111,7 +122,8 @@
       <workItem from="1728936091928" duration="1624000" />
       <workItem from="1728937737204" duration="3328000" />
       <workItem from="1728975952391" duration="78000" />
-      <workItem from="1728976557506" duration="6391000" />
+      <workItem from="1728976557506" duration="6989000" />
+      <workItem from="1729064253011" duration="3292000" />
     </task>
     <servers />
   </component>
