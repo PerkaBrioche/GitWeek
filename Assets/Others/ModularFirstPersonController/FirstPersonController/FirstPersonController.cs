@@ -4,6 +4,7 @@
 //
 // "Enable/Disable Headbob, Changed look rotations - should result in reduced camera jitters" || version 1.0.1
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,6 +18,7 @@ using UnityEngine.UI;
 public class FirstPersonController : MonoBehaviour
 {
     private Rigidbody rb;
+
 
     #region Camera Movement Variables
 
@@ -230,43 +232,11 @@ public class FirstPersonController : MonoBehaviour
 
         if (enableZoom)
         {
-            // Changes isZoomed when key is pressed
-            // Behavior for toogle zoom
-            if(Input.GetKeyDown(zoomKey) && !holdToZoom && !isSprinting)
-            {
-                if (!isZoomed)
-                {
-                    isZoomed = true;
-                }
-                else
-                {
-                    isZoomed = false;
-                }
-            }
-
-            // Changes isZoomed when key is pressed
-            // Behavior for hold to zoom
-            if(holdToZoom && !isSprinting)
-            {
-                if(Input.GetKeyDown(zoomKey))
-                {
-                    isZoomed = true;
-                }
-                else if(Input.GetKeyUp(zoomKey))
-                {
-                    isZoomed = false;
-                }
-            }
-
-            // Lerps camera.fieldOfView to allow for a smooth transistion
-            if(isZoomed)
-            {
-                playerCamera.fieldOfView = Mathf.Lerp(playerCamera.fieldOfView, zoomFOV, zoomStepTime * Time.deltaTime);
-            }
-            else if(!isZoomed && !isSprinting)
-            {
-                playerCamera.fieldOfView = Mathf.Lerp(playerCamera.fieldOfView, fov, zoomStepTime * Time.deltaTime);
-            }
+            playerCamera.fieldOfView = Mathf.Lerp(playerCamera.fieldOfView, zoomFOV, zoomStepTime * Time.deltaTime);
+        }
+        else
+        {
+            playerCamera.fieldOfView = Mathf.Lerp(playerCamera.fieldOfView, fov, zoomStepTime * Time.deltaTime);
         }
 
         #endregion

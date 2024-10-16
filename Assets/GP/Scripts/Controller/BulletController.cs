@@ -22,8 +22,6 @@ public class BulletController : MonoBehaviour
 
         for (int i = 0; i < Weapon.INT_BulletToShot; i++)
         {
-            print("Bullet Shot " + (i + 1));
-
             Ray ray = mainCamera.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2));
 
             Vector3 shootDirection = ray.direction;
@@ -39,10 +37,10 @@ public class BulletController : MonoBehaviour
             {
                 RayTouch(hit);
             }
-            if(shaked){return;}
-            shaked = true;
-            ShakeManager.instance.ShakeCamera(Weapon.ShakeValue.x, Weapon.ShakeValue.y);
+ 
         }
+
+        ShakeManager.instance.ShakeCamera(Weapon.ShakeValue.x, Weapon.ShakeValue.y);
     }
 
 
