@@ -8,13 +8,19 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GitWeek/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GitWeek/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/BulletController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/BulletController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/PlayerActionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/PlayerActionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Others/ModularFirstPersonController/FirstPersonController/FirstPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Others/ModularFirstPersonController/FirstPersonController/FirstPersonController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PREF_Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PREF_Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Manager/ShakeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Manager/ShakeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Manager/TimeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Manager/TimeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Other/WeaponData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Other/WeaponData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/WeaponManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/WeaponManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GabrielScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GabrielScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TimerManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TimerManager.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Search.settings" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Search.settings" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,11 +34,14 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ArmController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CursorManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DestroyHimself.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lemer/Bureau/IIM/A2/PROG/C#/Projet/GitWeekFinal/GitWeek/Assets/GP/Scripts/Controller/BulletController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/lemer/Bureau/IIM/A2/PROG/C#/Projet/GitWeekFinal/GitWeek/Assets/GP/Scripts/Controller/BulletController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GP/Scripts/Controller/PlayerActionController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GP/Scripts/Manager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GP/Scripts/Other/WeaponData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TimerManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GeneratorController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TrailsController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -121,7 +130,7 @@
       <workItem from="1728975952391" duration="78000" />
       <workItem from="1728976557506" duration="6989000" />
       <workItem from="1729064253011" duration="3909000" />
-      <workItem from="1729080649927" duration="7062000" />
+      <workItem from="1729080649927" duration="11313000" />
     </task>
     <servers />
   </component>

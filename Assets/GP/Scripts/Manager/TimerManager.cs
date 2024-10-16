@@ -17,6 +17,8 @@ public class TimerManager : MonoBehaviour
     {
         if (Instance == null)
         {
+            GameObject.DontDestroyOnLoad(gameObject);
+
             Instance = this;
         }
     }

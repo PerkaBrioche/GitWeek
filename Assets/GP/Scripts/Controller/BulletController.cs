@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BulletController : MonoBehaviour
 {
     public Transform TRA_BulletOrigin;
     public GameObject PART_Impact;
+    public GameObject PART_Electric;
+    public GameObject PART_Blood;
     public GameObject PREF_Bullet;
-
+    
     private void Start()
     {
     }
@@ -30,13 +33,14 @@ public class BulletController : MonoBehaviour
 
             RaycastHit hit;
             Debug.DrawRay(V3_Origin, shootDirection * Weapon.FLO_WeaponRange, Color.red, 1.0f);
-            var Bullet = Instantiate(PREF_Bullet, TRA_BulletOrigin.position, transform.rotation);
-            Bullet.GetComponent<Bullet>().StartBullet(shootDirection);
-
             if (Physics.Raycast(V3_Origin, shootDirection, out hit, Weapon.FLO_WeaponRange))
             {
-                RayTouch(hit);
+                RayTouch(hit, Weapon.INT_Damage, Weapon.BOOL_CAC);
             }
+            
+            if(Weapon.BOOL_CAC){return;}
+            var Bullet = Instantiate(PREF_Bullet, TRA_BulletOrigin.position, transform.rotation);
+            Bullet.GetComponent<Bullet>().StartBullet(shootDirection);
  
         }
 
@@ -44,13 +48,20 @@ public class BulletController : MonoBehaviour
     }
 
 
-    public void RayTouch(RaycastHit hit)
+    public void RayTouch(RaycastHit hit, int damage, bool cac)
     {
         string tag = hit.transform.tag;
         Vector3 hitPosition = hit.point;
         if (tag == "Obstacle")
         {
             Instantiate(PART_Impact, hitPosition, hit.transform.rotation);
+        }
+
+        if (tag == "Generator")
+        {
+            if (cac){ damage *= 2;}
+            hit.transform.GetComponent<GeneratorController>().LoseLife(damage);
+            Instantiate(PART_Electric, hitPosition, hit.transform.rotation);
         }
     }
 }

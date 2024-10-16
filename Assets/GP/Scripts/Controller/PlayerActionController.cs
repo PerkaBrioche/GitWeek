@@ -26,25 +26,30 @@ public class PlayerActionController : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown("0"))
+        if (Input.GetKeyDown("1"))
         {
             WeaponManager.Instance.NewWeapon(0);
         }
-        if (Input.GetKeyDown("1"))
+        if (Input.GetKeyDown("2"))
         {
             WeaponManager.Instance.NewWeapon(1);
         }
-        if (Input.GetKeyDown("2"))
+        if (Input.GetKeyDown("3"))
         {
             WeaponManager.Instance.NewWeapon(2);
+        }
+        if (Input.GetKeyDown("4"))
+        {
+            WeaponManager.Instance.NewWeapon(3);
         }
         if (Input.GetMouseButton(0))
         {
             if (WeaponController.HasBullet() && !WeaponController.IsReloading() && !WeaponController.TimingBeetween()) 
             {
                 bulletController.ShootBullet(WeaponController.ActualWeapon);
-                WeaponController.UpdateClip();
                 WeaponController.LaunchShootTime();
+                if(WeaponController.ActualWeapon.BOOL_CAC){return;}
+                WeaponController.UpdateClip();
             }
             else
             {

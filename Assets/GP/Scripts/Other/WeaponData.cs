@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu (menuName = "Data", fileName = "Weapon")]
 public class WeaponData : ScriptableObject
 {
+    public bool BOOL_CAC;
     public string STR_WeaponName;
     public int INT_BulletclipMax;
     public float FLO_ReloadingTime;
@@ -19,6 +20,7 @@ public class WeaponData : ScriptableObject
     {
         WeaponData clone = ScriptableObject.CreateInstance<WeaponData>();
         clone.STR_WeaponName = this.STR_WeaponName;
+        clone.BOOL_CAC = this.BOOL_CAC;
         clone.INT_BulletclipMax = this.INT_BulletclipMax;
         clone.FLO_ReloadingTime = this.FLO_ReloadingTime;
         clone.INT_Damage = this.INT_Damage;
