@@ -16,6 +16,7 @@ MonoBehaviour:
   OneHanded: 1
   STR_WeaponName: Revolver
   INT_BulletclipMax: 6
+  INT_ActualClip: 6
   FLO_ReloadingTime: 2
   INT_Damage: 20
   FLO_BulletDispersion: 0

@@ -26,23 +26,7 @@ public class PlayerActionController : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown("1"))
-        {
-            WeaponManager.Instance.NewWeapon(0);
-        }
-        if (Input.GetKeyDown("2"))
-        {
-            WeaponManager.Instance.NewWeapon(1);
-        }
-        if (Input.GetKeyDown("3"))
-        {
-            WeaponManager.Instance.NewWeapon(2);
-        }
-        if (Input.GetKeyDown("4"))
-        {
-            WeaponManager.Instance.NewWeapon(3);
-        }
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && WeaponController.HasWeapon())
         {
             if (WeaponController.HasBullet() && !WeaponController.IsReloading() && !WeaponController.TimingBeetween()) 
             {
@@ -66,6 +50,19 @@ public class PlayerActionController : MonoBehaviour
         {
             WeaponController.Reaload();
         }
+
+        if (WeaponController.HasWeapon() && WeaponController.LIST_PlayerWeapons.Count > 1)
+        {
+            if (Input.GetAxis("Mouse ScrollWheel") > 0f && WeaponController.CanScrollUp()) // forward
+            {
+                WeaponController.WheelWeapon(1);
+            }
+            else if (Input.GetAxis("Mouse ScrollWheel") < 0f && WeaponController.CanScrollDown()) // backwards
+            {
+                WeaponController.WheelWeapon(-1);
+            }    
+        }
+
     }
 
     private void Dash()
@@ -113,5 +110,7 @@ public class PlayerActionController : MonoBehaviour
         yield return new WaitForSeconds(FLO_DashCoolDown);
         CanDash = true;
     }
+
+
 
 }

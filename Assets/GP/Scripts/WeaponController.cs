@@ -7,13 +7,16 @@ using UnityEngine;
 public class WeaponController : MonoBehaviour
 { 
     [NonSerialized] public WeaponData ActualWeapon;
-    [NonSerialized] public List<WeaponData> LIST_PlayerWeapons;
+    public List<WeaponData> LIST_PlayerWeapons;
     private bool BOOL_IsReloading;
     private bool BOOL_TimingBeetween;
 
+    public int INT_WheelWeapon;
+
     public TextMeshProUGUI TMP_Clip;
     public TextMeshProUGUI TMP_WeaponName;
-    
+
+    public IConManager IConManager;
     
 
     public void Reaload()
@@ -35,15 +38,26 @@ public class WeaponController : MonoBehaviour
     public void UpdateWeapon(WeaponData NewWeapon)
     {
         LIST_PlayerWeapons.Add(NewWeapon);
+        INT_WheelWeapon = LIST_PlayerWeapons.Count-1;
         ChangeWeapon(NewWeapon);
+        ActualWeapon.INT_ActualClip = ActualWeapon.INT_BulletclipMax;
+    }
+
+    public void WheelWeapon(int wheel)
+    {
+        INT_WheelWeapon += wheel;
+        if(LIST_PlayerWeapons[INT_WheelWeapon] == null){return;}
+        ChangeWeapon(LIST_PlayerWeapons[INT_WheelWeapon]);
     }
 
     public void ChangeWeapon(WeaponData NewWeapon)
     {
         ActualWeapon = NewWeapon;
-        ActualWeapon.INT_ActualClip = ActualWeapon.INT_BulletclipMax;
         UpdateClip(0);
         TMP_WeaponName.text = ActualWeapon.STR_WeaponName;
+        StopAllCoroutines();
+        BOOL_IsReloading = false;
+        IConManager.CheckIncon(INT_WheelWeapon);
     }
 
     public void UpdateClip(int ClipToSuppr = 1)
@@ -80,6 +94,33 @@ public class WeaponController : MonoBehaviour
     public bool IsReloading()
     {
         return BOOL_IsReloading;
+    }
+    
+    public bool HasWeapon()
+    {
+        if (ActualWeapon != null)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    public bool CanScrollUp()
+    {
+        if (LIST_PlayerWeapons.Count > INT_WheelWeapon)
+        {
+            return true;
+        }
+        return false;
+    }
+    public bool CanScrollDown()
+    {
+        if (LIST_PlayerWeapons.Count > 1 && INT_WheelWeapon != 0)
+        {
+            return true;
+        }
+        return false;
     }
     
     

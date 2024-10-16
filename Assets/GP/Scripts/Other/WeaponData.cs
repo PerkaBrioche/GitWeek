@@ -16,12 +16,14 @@ public class WeaponData : ScriptableObject
     public int INT_BulletToShot;
     public float FLO_TimeBeetweenShoot;
     public float FLO_WeaponRange;
+    public Texture TEXTURE_IconWeapon;
     public Vector2 ShakeValue;
     
     public WeaponData Clone()
     {
         WeaponData clone = ScriptableObject.CreateInstance<WeaponData>();
         clone.STR_WeaponName = this.STR_WeaponName;
+        clone.TEXTURE_IconWeapon = this.TEXTURE_IconWeapon;
         clone.OneHanded = this.OneHanded;
         clone.BOOL_CAC = this.BOOL_CAC;
         clone.INT_BulletclipMax = this.INT_BulletclipMax;
