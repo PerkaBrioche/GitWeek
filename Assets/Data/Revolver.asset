@@ -12,12 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4466900ef778b194883adf1a5dccc077, type: 3}
   m_Name: Revolver
   m_EditorClassIdentifier: 
+  BOOL_CAC: 0
+  OneHanded: 1
   STR_WeaponName: Revolver
   INT_BulletclipMax: 6
+  INT_ActualClip: 6
   FLO_ReloadingTime: 2
   INT_Damage: 20
   FLO_BulletDispersion: 0
   INT_BulletToShot: 1
   FLO_TimeBeetweenShoot: 0.8
   FLO_WeaponRange: 1000
-  ShakeValue: {x: 0.7, y: 0.17}
+  ShakeValue: {x: 0.8, y: 0.15}
