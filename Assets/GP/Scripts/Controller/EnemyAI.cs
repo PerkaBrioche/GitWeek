@@ -129,6 +129,7 @@ public class EnemyAi : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, followRange); // Rayon pour la portée de suivi
     }
+
 }
 
 
