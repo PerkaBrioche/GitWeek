@@ -63,7 +63,8 @@ public class WeaponController : MonoBehaviour
         StopAllCoroutines();
         BOOL_IsReloading = false;
         IConManager.CheckIncon(INT_WheelWeapon);
-        ArmController.ChangeArmsSkin(ActualWeapon.OneHanded, ActualWeapon.TEXTURE_RightArm);
+        
+      //  ArmController.ChangeArmsSkin(ActualWeapon.OneHanded, ActualWeapon.TEXTURE_RightArm);
         
     }
 

@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2e0886e1-1837-4af9-863f-1de15a42bd92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GitWeek/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GitWeek/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArmController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ArmController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArmController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ArmController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Manager/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Manager/WeaponManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Manager/WeaponManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Other/WeaponData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Other/WeaponData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/WeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/WeaponController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GabrielScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GabrielScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
@@ -128,7 +124,7 @@
       <workItem from="1729064253011" duration="3909000" />
       <workItem from="1729080649927" duration="11714000" />
       <workItem from="1729108131724" duration="7346000" />
-      <workItem from="1729150117384" duration="1133000" />
+      <workItem from="1729150117384" duration="1734000" />
     </task>
     <servers />
   </component>
