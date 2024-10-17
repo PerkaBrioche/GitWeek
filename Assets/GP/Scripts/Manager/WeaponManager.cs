@@ -19,6 +19,8 @@ public class WeaponManager : MonoBehaviour
             GameObject.DontDestroyOnLoad(gameObject);
             Instance = this;
         }
+
+        WeaponController = FindObjectOfType<WeaponController>();
     }
     public List<WeaponData> LIST_AllWeapons;
     

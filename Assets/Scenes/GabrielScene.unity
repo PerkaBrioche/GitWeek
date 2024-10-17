@@ -19387,6 +19387,7 @@ MonoBehaviour:
   TMP_Clip: {fileID: 1130621435}
   TMP_WeaponName: {fileID: 2146430285}
   IConManager: {fileID: 343656169}
+  ArmController: {fileID: 0}
 --- !u!1 &4459864850984700777
 GameObject:
   m_ObjectHideFlags: 0

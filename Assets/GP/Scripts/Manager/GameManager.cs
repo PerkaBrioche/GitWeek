@@ -24,9 +24,8 @@ public class GameManager : MonoBehaviour
         }
         GameObject.DontDestroyOnLoad(gameObject);
         TMP_TextGenerator.text = "";
-        
-        ActivateGenerator();
-
+        FirstPersonController = FindObjectOfType<FirstPersonController>();
+        PlayerActionController = FindObjectOfType<PlayerActionController>();
     }
 
     public void GameOver()

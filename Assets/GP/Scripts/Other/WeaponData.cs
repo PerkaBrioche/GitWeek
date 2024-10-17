@@ -6,7 +6,6 @@ using UnityEngine;
 public class WeaponData : ScriptableObject
 {
     public bool BOOL_CAC;
-    public bool OneHanded;
     public string STR_WeaponName;
     public int INT_BulletclipMax;
     public int INT_ActualClip;
@@ -16,9 +15,14 @@ public class WeaponData : ScriptableObject
     public int INT_BulletToShot;
     public float FLO_TimeBeetweenShoot;
     public float FLO_WeaponRange;
-    public Texture TEXTURE_IconWeapon;
     public Vector2 ShakeValue;
-    
+
+    [Space(10)]
+    [Header("Details")]
+    public Texture TEXTURE_IconWeapon;
+    public Texture TEXTURE_RightArm;
+    public bool OneHanded;
+
     public WeaponData Clone()
     {
         WeaponData clone = ScriptableObject.CreateInstance<WeaponData>();
@@ -35,6 +39,7 @@ public class WeaponData : ScriptableObject
         clone.FLO_TimeBeetweenShoot = this.FLO_TimeBeetweenShoot;
         clone.ShakeValue = this.ShakeValue;
         clone.FLO_WeaponRange = this.FLO_WeaponRange;
+        clone.TEXTURE_RightArm = this.TEXTURE_RightArm;
         return clone;
     }
 }
