@@ -15,9 +15,14 @@ public class WeaponController : MonoBehaviour
 
     public TextMeshProUGUI TMP_Clip;
     public TextMeshProUGUI TMP_WeaponName;
-
     public IConManager IConManager;
-    
+
+    public ArmController ArmController;
+
+    private void Start()
+    {
+        ArmController = FindObjectOfType<ArmController>();
+    }
 
     public void Reaload()
     {
@@ -58,6 +63,8 @@ public class WeaponController : MonoBehaviour
         StopAllCoroutines();
         BOOL_IsReloading = false;
         IConManager.CheckIncon(INT_WheelWeapon);
+        ArmController.ChangeArmsSkin(ActualWeapon.OneHanded, ActualWeapon.TEXTURE_RightArm);
+        
     }
 
     public void UpdateClip(int ClipToSuppr = 1)

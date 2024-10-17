@@ -1,34 +1,33 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HandMovement : MonoBehaviour
+public class ArmController : MonoBehaviour
 {
-    public RectTransform leftHand;
-    public RectTransform rightHand; 
-    public float smoothness = 5.0f; 
-    public float movementAmount = 30.0f;
+    public RawImage RAW_LeftArm;
+    public RawImage RAW_RightArm;
+    public RawImage RAW_MiddleArm;
 
-    private Vector3 initialLeftHandPosition;
-    private Vector3 initialRightHandPosition;
-
-    private void Start()
+    public GameObject OneARm;
+    public GameObject TwoARm;
+    
+    public void ChangeArmsSkin(bool OneHanded, Texture ArmTexture)
     {
-        initialLeftHandPosition = leftHand.anchoredPosition;
-        initialRightHandPosition = rightHand.anchoredPosition;
+        if (OneHanded)
+        {
+            OneARm .SetActive(true);
+            TwoARm .SetActive(false);
+            RAW_MiddleArm.texture = ArmTexture;
+        }
+        else
+        {
+            OneARm .SetActive(false);
+            TwoARm .SetActive(true);
+            RAW_RightArm.texture = ArmTexture;
+        }
+
     }
-
-    private void Update()
-    {
-        float mouseX = Input.GetAxis("Mouse X");
-        float mouseY = Input.GetAxis("Mouse Y");
-
-        float Horizontal = Input.GetAxis("Horizontal");
-        float Vertical = Input.GetAxis("Vertical");
-        
-        Vector3 newLeftHandPosition = initialLeftHandPosition + new Vector3(-mouseX + -Horizontal, -mouseY +- Vertical, 0) * movementAmount;
-        Vector3 newRightHandPosition = initialRightHandPosition + new Vector3(-mouseX +  -Horizontal, -mouseY +-Vertical, 0) * movementAmount;
-
-        leftHand.anchoredPosition = Vector3.Lerp(leftHand.anchoredPosition, newLeftHandPosition, Time.deltaTime * smoothness);
-        rightHand.anchoredPosition = Vector3.Lerp(rightHand.anchoredPosition, newRightHandPosition, Time.deltaTime * smoothness);
-    }
+    
+    
 }
