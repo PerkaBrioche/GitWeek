@@ -69,7 +69,7 @@ public class EnemyAi : MonoBehaviour
         if (!alreadyAttacked)
         {
             // Créer le projectile et le lancer vers le joueur
-            Rigidbody rb = Instantiate(projectile, transform.position + transform.forward, Quaternion.identity).GetComponent<Rigidbody>();
+            Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
 
             // Tirer le projectile directement vers le joueur
             Vector3 direction = (player.position - transform.position).normalized;
