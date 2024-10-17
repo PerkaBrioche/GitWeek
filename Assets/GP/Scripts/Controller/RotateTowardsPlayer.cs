@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RotateTowardsPlayer : MonoBehaviour
 {
-    public Transform player; 
+    public Transform player;
     public float rotationSpeed = 5f; // Vitesse de rotation
 
     void Update()
@@ -17,9 +17,19 @@ public class RotateTowardsPlayer : MonoBehaviour
             // Créer une rotation vers le joueur
             Quaternion targetRotation = Quaternion.LookRotation(directionToPlayer);
 
-            // Rotation fluide vers le joueur
+            // Appliquer la rotation fluide
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
+            // Conserver l'axe Y du plane en vertical
+            Vector3 eulerRotation = transform.rotation.eulerAngles;
+            eulerRotation.x = -90; // Fixer l'axe X à -90° pour garder le plane vertical
+            transform.rotation = Quaternion.Euler(eulerRotation);
         }
     }
 }
+
+
+
+
+
 
