@@ -9,14 +9,16 @@ public class WeaponManager : MonoBehaviour
     [NonSerialized] public WeaponData PlayerWeapon;
     public WeaponController WeaponController;
 
+    public Transform TRA_Horizontal;
+    public GameObject GO_Icon;
+
     private void Awake()
     {
         if (Instance == null)
         {
+            GameObject.DontDestroyOnLoad(gameObject);
             Instance = this;
         }
-
-        NewWeapon(0);
     }
     public List<WeaponData> LIST_AllWeapons;
     
@@ -24,9 +26,9 @@ public class WeaponManager : MonoBehaviour
     {
         return PlayerWeapon;
     }
-    public void NewWeapon(int Index)
+    public void NewWeapon(WeaponData weapon)
     {
-        PlayerWeapon = LIST_AllWeapons[Index].Clone();
-        WeaponController.UpdateWeapon(PlayerWeapon);
+        Instantiate(GO_Icon, TRA_Horizontal);
+        WeaponController.UpdateWeapon(weapon);
     }
 }

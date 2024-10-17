@@ -55,10 +55,14 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     width: 1706.6666
 =======
     width: 1706.6667
+>>>>>>> origin/Gabriel
+=======
+    width: 1706.6666
 >>>>>>> origin/Gabriel
     height: 976
 =======
@@ -89,6 +93,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     width: 1706.6666
 =======
@@ -96,6 +101,9 @@ MonoBehaviour:
 >>>>>>> Stashed changes
 =======
     width: 1706.6667
+>>>>>>> origin/Gabriel
+=======
+    width: 1706.6666
 >>>>>>> origin/Gabriel
     height: 30
   m_MinSize: {x: 0, y: 0}
@@ -120,6 +128,7 @@ MonoBehaviour:
 <<<<<<< Updated upstream
     y: 956
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1706.6666
 =======
     y: 752.8
@@ -127,6 +136,9 @@ MonoBehaviour:
 >>>>>>> Stashed changes
 =======
     width: 1706.6667
+>>>>>>> origin/Gabriel
+=======
+    width: 1706.6666
 >>>>>>> origin/Gabriel
     height: 20
   m_MinSize: {x: 0, y: 0}
@@ -158,15 +170,20 @@ MonoBehaviour:
     x: 0
     y: 30
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     width: 1706.6666
 =======
     width: 1706.6667
 >>>>>>> origin/Gabriel
+=======
+    width: 1706.6666
+>>>>>>> origin/Gabriel
     height: 926
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
   controlID: 117
 =======
@@ -179,6 +196,9 @@ MonoBehaviour:
 >>>>>>> Stashed changes
 =======
   controlID: 116
+>>>>>>> origin/Gabriel
+=======
+  controlID: 53
 >>>>>>> origin/Gabriel
   draggingID: 0
 --- !u!114 &6
@@ -205,15 +225,20 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     width: 1706.6666
 =======
     width: 1706.6667
 >>>>>>> origin/Gabriel
+=======
+    width: 1706.6666
+>>>>>>> origin/Gabriel
     height: 926
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
   controlID: 118
 =======
@@ -226,6 +251,9 @@ MonoBehaviour:
 >>>>>>> Stashed changes
 =======
   controlID: 117
+>>>>>>> origin/Gabriel
+=======
+  controlID: 54
 >>>>>>> origin/Gabriel
   draggingID: 0
 --- !u!114 &7
@@ -257,6 +285,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 43
 =======
     width: 1048.8
@@ -266,6 +295,9 @@ MonoBehaviour:
   vertical: 0
   controlID: 38
 >>>>>>> Stashed changes
+=======
+  controlID: 55
+>>>>>>> origin/Gabriel
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -288,11 +320,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1293.3334
-    height: 655.3333
+    height: 585.3333
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 44
+  controlID: 45
   draggingID: 0
 --- !u!114 &9
 MonoBehaviour:
@@ -317,6 +349,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     width: 758.6667
     height: 648
@@ -326,6 +359,12 @@ MonoBehaviour:
 >>>>>>> origin/Gabriel
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
+=======
+    width: 653.3333
+    height: 585.3333
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> origin/Gabriel
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -364,14 +403,18 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     x: 758.6667
 =======
     x: 659.3333
 >>>>>>> origin/Gabriel
+=======
+    x: 653.3333
+>>>>>>> origin/Gabriel
     y: 0
-    width: 634.00006
-    height: 655.3333
+    width: 640.00006
+    height: 585.3333
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
@@ -398,13 +441,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 655.3333
+    y: 585.3333
     width: 1293.3334
-    height: 270.6667
+    height: 340.6667
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 137
+  controlID: 56
   draggingID: 0
 --- !u!114 &12
 =======
@@ -440,7 +483,7 @@ MonoBehaviour:
 <<<<<<< Updated upstream
     y: 0
     width: 932.6667
-    height: 270.6667
+    height: 340.6667
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 19}
@@ -467,7 +510,7 @@ MonoBehaviour:
     x: 932.6667
     y: 0
     width: 360.6667
-    height: 270.6667
+    height: 340.6667
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 21}
@@ -511,7 +554,7 @@ MonoBehaviour:
 <<<<<<< Updated upstream
     x: 1293.3334
     y: 0
-    width: 413.33337
+    width: 413.33325
     height: 926
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
@@ -566,6 +609,7 @@ MonoBehaviour:
     x: 0
     y: 72.66667
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 757.6667
     height: 627
 =======
@@ -577,6 +621,10 @@ MonoBehaviour:
 =======
     width: 658.3333
     height: 634.3333
+>>>>>>> origin/Gabriel
+=======
+    width: 652.3333
+    height: 564.3333
 >>>>>>> origin/Gabriel
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -638,6 +686,7 @@ MonoBehaviour:
       x: 0
       y: 21
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       width: 757.6667
       height: 606
@@ -655,6 +704,12 @@ MonoBehaviour:
     m_Scale: {x: 0.5143229, y: 0.5143229}
     m_Translation: {x: 329.16663, y: 306.66666}
 >>>>>>> origin/Gabriel
+=======
+      width: 652.3333
+      height: 543.3333
+    m_Scale: {x: 0.5096354, y: 0.5096354}
+    m_Translation: {x: 326.16666, y: 271.66666}
+>>>>>>> origin/Gabriel
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -663,12 +718,12 @@ MonoBehaviour:
       serializedVersion: 2
 <<<<<<< Updated upstream
       x: -640
-      y: -596.2532
+      y: -533.0608
       width: 1280
-      height: 1192.5063
+      height: 1066.1216
     m_MinimalGUI: 1
-  m_defaultScale: 0.5143229
-  m_LastWindowPixelSize: {x: 987.5, y: 951.5}
+  m_defaultScale: 0.5096354
+  m_LastWindowPixelSize: {x: 978.5, y: 846.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
@@ -724,6 +779,7 @@ MonoBehaviour:
     x: 0
 <<<<<<< Updated upstream
     y: 72.66667
+<<<<<<< HEAD
     width: 713.6667
     height: 585
 =======
@@ -731,6 +787,10 @@ MonoBehaviour:
     width: 249.4
     height: 407
 >>>>>>> Stashed changes
+=======
+    width: 658.3333
+    height: 638.3333
+>>>>>>> origin/Gabriel
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -744,7 +804,7 @@ MonoBehaviour:
 <<<<<<< Updated upstream
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 23204
+  m_LastSelectedObjectID: 24380
 --- !u!114 &17
 =======
   m_SceneHierarchy:
@@ -798,6 +858,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     x: 758.6667
     y: 72.66667
@@ -815,6 +876,12 @@ MonoBehaviour:
     width: 632.00006
     height: 634.3333
 >>>>>>> origin/Gabriel
+=======
+    x: 653.3334
+    y: 72.66667
+    width: 638.00006
+    height: 564.3333
+>>>>>>> origin/Gabriel
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -829,8 +896,12 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       snapOffset: {x: -174, y: -26.666687}
+=======
+      snapOffset: {x: -179, y: -26.666687}
+>>>>>>> origin/Gabriel
       snapOffsetDelta: {x: 0, y: 0}
 =======
       snapOffset: {x: 0, y: 0}
@@ -1097,9 +1168,14 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       snapOffset: {x: -116.666664, y: -213.33337}
       snapOffsetDelta: {x: -0.000022888184, y: 0}
+=======
+      snapOffset: {x: -231.99997, y: -213.33337}
+      snapOffsetDelta: {x: 0, y: 0}
+>>>>>>> origin/Gabriel
       snapCorner: 3
       id: Scene View/Particles
       index: 6
@@ -1244,9 +1320,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 48, y: 48}
+      snapOffset: {x: -217.33334, y: -353.3333}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
+      snapCorner: 3
       id: AINavigationOverlay
 <<<<<<< HEAD
 >>>>>>> Stashed changes
@@ -1263,11 +1339,12 @@ MonoBehaviour:
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
-  m_2DMode: 0
+  m_2DMode: 1
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
     m_Target: {x: 1102.9807, y: 1068.9786, z: -17.03103}
@@ -1282,6 +1359,11 @@ MonoBehaviour:
     m_Target: {x: 44.423336, y: -109.03564, z: 263.69852}
     speed: 2
     m_Value: {x: 44.423336, y: -109.03564, z: 263.69852}
+>>>>>>> origin/Gabriel
+=======
+    m_Target: {x: 907.31476, y: 759.9654, z: -12.3959875}
+    speed: 2
+    m_Value: {x: 907.31476, y: 759.9654, z: -12.3959875}
 >>>>>>> origin/Gabriel
   m_RenderMode: 0
   m_CameraMode:
@@ -1338,17 +1420,22 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.1948323, y: 0.08356338, z: -0.01665911, w: 0.97713697}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
     m_Value: {x: -0.000000013314254, y: 0.0000001373989, z: -0.000000032143454, w: -1}
 =======
     m_Value: {x: 0.19483067, y: 0.08356268, z: -0.016658971, w: 0.9771288}
 >>>>>>> origin/Gabriel
+=======
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
+>>>>>>> origin/Gabriel
   m_Size:
-    m_Target: 175.49863
+    m_Target: 1181.5873
     speed: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_Value: 1447.4359
 =======
@@ -1361,10 +1448,13 @@ MonoBehaviour:
 =======
     m_Value: 175.49863
 >>>>>>> origin/Gabriel
+=======
+    m_Value: 1181.5873
+>>>>>>> origin/Gabriel
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.5
@@ -1378,7 +1468,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: -0.17985834, y: 0.6410402, z: -0.15811256, w: -0.7292748}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -1406,10 +1496,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 558.6667
+    x: 659.3334
     y: 72.66667
-    width: 521.99994
-    height: 585
+    width: 632.00006
+    height: 638.3333
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1422,16 +1512,16 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_ViewTransforms:
     m_KeySerializationHelper:
-    - {fileID: 6160935347723620293, guid: ead8e714b04f3fa47981d24ae177c68f, type: 2}
+    - {fileID: 3504612908297188123, guid: ca7a11861b88b60448aebf9718a99404, type: 2}
     m_ValueSerializationHelper:
     - e00: 1
       e01: 0
       e02: 0
-      e03: 0
+      e03: -99.33325
       e10: 0
       e11: 1
       e12: 0
-      e13: 0
+      e13: 230
       e20: 0
       e21: 0
       e22: 1
@@ -1441,9 +1531,9 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: ead8e714b04f3fa47981d24ae177c68f, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: ca7a11861b88b60448aebf9718a99404, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 6160935347723620293, guid: ead8e714b04f3fa47981d24ae177c68f, type: 2}
+  - m_Target: {fileID: 3504612908297188123, guid: ca7a11861b88b60448aebf9718a99404, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -1481,6 +1571,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     y: 720.6667
     width: 931.6667
@@ -1494,6 +1585,11 @@ MonoBehaviour:
     y: 728
     width: 931.6667
     height: 249.66669
+>>>>>>> origin/Gabriel
+=======
+    y: 658
+    width: 931.6667
+    height: 319.6667
 >>>>>>> origin/Gabriel
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1516,7 +1612,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1525,7 +1621,7 @@ MonoBehaviour:
 <<<<<<< Updated upstream
   m_StartGridSize: 57
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: 57
 <<<<<<< HEAD
   m_LastProjectPath: C:\Users\lemer\Bureau\IIM\A2\PROG\C#\Projet\GitWeek3D\GitWeek3D
@@ -1554,10 +1650,17 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 26.333313}
     m_SelectedIDs: 165b0000
     m_LastClickedID: 23318
     m_ExpandedIDs: 00000000f85a0000fa5a0000fc5a0000165b0000
+>>>>>>> origin/Gabriel
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 7c610000
+    m_LastClickedID: 24956
+    m_ExpandedIDs: 000000007c6100007e61000080610000
 >>>>>>> origin/Gabriel
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1590,7 +1693,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f85a0000fa5a0000fc5a0000
+    m_ExpandedIDs: 000000007c6100007e61000080610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1617,12 +1720,17 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 1
 <<<<<<< Updated upstream
     m_ExpandedInstanceIDs: c6230000c2780000ae7c000052260300f29b00001c86000034b60400ce7e0000fc7d00004ae80000e07e00000285000032940000bc8700000c8600004c740000a87d0000eca1000000000000
 =======
     m_ExpandedInstanceIDs: c6230000
 >>>>>>> Stashed changes
+=======
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000c2780000ae7c000052260300f29b00001c86000034b60400ce7e0000fc7d00004ae80000e07e00000285000032940000bc8700000c8600004c740000a87d0000eca10000000000008457fcff
+>>>>>>> origin/Gabriel
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1683,8 +1791,9 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< Updated upstream
     x: 0
-    y: 728
+    y: 658
     width: 931.6667
+<<<<<<< HEAD
 <<<<<<< HEAD
     height: 257
 =======
@@ -1695,6 +1804,9 @@ MonoBehaviour:
 >>>>>>> Stashed changes
 =======
     height: 249.66669
+>>>>>>> origin/Gabriel
+=======
+    height: 319.6667
 >>>>>>> origin/Gabriel
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1728,9 +1840,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 932.6667
-    y: 728
+    y: 658
     width: 358.6667
-    height: 249.66669
+    height: 319.6667
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1744,23 +1856,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c05b0000
+      m_SelectedIDs: 525e0000
       m_LastClickedID: 0
-      m_ExpandedIDs: d07efeff5685feffa6beffffb6faffff665a00007e5a00009c5a0000a45a0000
+      m_ExpandedIDs: be2ffcff0cd5fcff16d8fcffa6b9fdffdefafffff25e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: TimerManager
+        m_OriginalName: TimerManager
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 24380
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 13}
       m_SearchString: 
@@ -1796,7 +1908,7 @@ MonoBehaviour:
 <<<<<<< Updated upstream
     x: 1293.3334
     y: 72.66667
-    width: 412.33337
+    width: 412.33325
     height: 905
 =======
     x: 1048.8
