@@ -9,8 +9,6 @@ public class TimeManager : MonoBehaviour
     {
         if (instance == null)
         {
-            GameObject.DontDestroyOnLoad(gameObject);
-
             instance = this;
         }
     }
