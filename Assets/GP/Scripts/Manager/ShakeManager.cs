@@ -9,6 +9,7 @@ public class ShakeManager : MonoBehaviour
     {
         if (instance == null)
         {
+            GameObject.DontDestroyOnLoad(gameObject);
             instance = this;
         }
     }

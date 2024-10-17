@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -14,5 +15,11 @@ public class Bullet : MonoBehaviour
     private void Update()
     {
         transform.position += direction * Speed * Time.deltaTime;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        print("DE");
+        Destroy(gameObject);
     }
 }

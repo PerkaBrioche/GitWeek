@@ -1,108 +1,111 @@
-﻿
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemyAi : MonoBehaviour
 {
-    public NavMeshAgent agent;
+    public NavMeshAgent agent; 
 
-    public Transform player;
+    public Transform player; 
 
-    public LayerMask whatIsGround, whatIsPlayer;
+    public LayerMask whatIsPlayer; 
 
-    public float health;
+    public float health; // Santé de l'ennemi, pour plus tard
 
-    //Patroling
-    public Vector3 walkPoint;
-    bool walkPointSet;
-    public float walkPointRange;
+    // Variables pour l'attaque
+    public float timeBetweenAttacks; 
+    bool alreadyAttacked; 
+    public GameObject projectile; 
 
-    //Attacking
-    public float timeBetweenAttacks;
-    bool alreadyAttacked;
-    public GameObject projectile;
+    // Variables pour les états de l'ennemi
+    public float attackRange; 
+    public bool playerInAttackRange; 
 
-    //States
-    public float sightRange, attackRange;
-    public bool playerInSightRange, playerInAttackRange;
+    public float followRange;
 
     private void Awake()
     {
         player = GameObject.Find("PlayerCamera").transform;
+
         agent = GetComponent<NavMeshAgent>();
     }
 
     private void Update()
     {
-        //Check for sight and attack range
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+        // Vérifier si le joueur est dans les portées d'attaque et de suivi
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+        bool playerInFollowRange = Physics.CheckSphere(transform.position, followRange, whatIsPlayer);
 
-        if (!playerInSightRange && !playerInAttackRange) Patroling();
-        if (playerInSightRange && !playerInAttackRange) ChasePlayer();
-        if (playerInAttackRange && playerInSightRange) AttackPlayer();
+        // Si le joueur est à portée de suivi mais hors de portée d'attaque, l'ennemi le suit
+        if (playerInFollowRange && !playerInAttackRange)
+        {
+            FollowPlayer();
+        }
+
+        // Si le joueur est à portée d'attaque mais que l'ennemi n'est pas assez proche, l'ennemi continue à le suivre
+        if (playerInAttackRange && playerInFollowRange)
+        {
+            // Si l'ennemi est assez proche (dans la portée d'attaque), il attaque
+            if (Vector3.Distance(transform.position, player.position) > attackRange * 0.75f)
+            {
+                FollowPlayer(); // Continue de suivre si l'ennemi est encore trop loin pour une attaque optimale
+            }
+            else
+            {
+                AttackPlayer(); // Attaque seulement quand l'ennemi est suffisamment proche
+            }
+        }
     }
 
-    private void Patroling()
+
+    // Fonction pour suivre le joueur quand il est à portée de suivi
+    private void FollowPlayer()
     {
-        if (!walkPointSet) SearchWalkPoint();
-
-        if (walkPointSet)
-            agent.SetDestination(walkPoint);
-
-        Vector3 distanceToWalkPoint = transform.position - walkPoint;
-
-        //Walkpoint reached
-        if (distanceToWalkPoint.magnitude < 1f)
-            walkPointSet = false;
-    }
-    private void SearchWalkPoint()
-    {
-        //Calculate random point in range
-        float randomZ = Random.Range(-walkPointRange, walkPointRange);
-        float randomX = Random.Range(-walkPointRange, walkPointRange);
-
-        walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
-
-        if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
-            walkPointSet = true;
-    }
-
-    private void ChasePlayer()
-    {
+        // L'ennemi se déplace vers la position du joueur
         agent.SetDestination(player.position);
     }
 
+    // Fonction pour attaquer le joueur quand il est à portée d'attaque
     private void AttackPlayer()
     {
-        //Make sure enemy doesn't move
+        // L'ennemi arrête de bouger lorsqu'il attaque
         agent.SetDestination(transform.position);
 
+        // L'ennemi se tourne vers le joueur
         transform.LookAt(player);
 
         if (!alreadyAttacked)
         {
-            ///Attack code here
-            Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-            rb.AddForce(transform.up * 8f, ForceMode.Impulse);
-            ///End of attack code
+            // Créer le projectile et le lancer vers le joueur
+            Rigidbody rb = Instantiate(projectile, transform.position + transform.forward, Quaternion.identity).GetComponent<Rigidbody>();
 
+            // Tirer le projectile directement vers le joueur
+            Vector3 direction = (player.position - transform.position).normalized;
+            rb.AddForce(direction * 32f, ForceMode.Impulse);
+
+            // Délai avant la prochaine attaque
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
     }
+
+    // Réinitialise la capacité d'attaque après un délai, pour plus tard
     private void ResetAttack()
     {
         alreadyAttacked = false;
     }
 
+    // Fonction appelée quand l'ennemi reçoit des dégâts, pour plus tard
     public void TakeDamage(int damage)
     {
         health -= damage;
 
+        // Si la santé de l'ennemi tombe à zéro ou moins, il est détruit
         if (health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
     }
+
+    // Détruit l'ennemi, pour plus tard
     private void DestroyEnemy()
     {
         Destroy(gameObject);
@@ -111,8 +114,10 @@ public class EnemyAi : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, attackRange);
+        Gizmos.DrawWireSphere(transform.position, attackRange); // Rayon pour la portée d'attaque
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, sightRange);
+        Gizmos.DrawWireSphere(transform.position, followRange); // Rayon pour la portée de suivi
     }
 }
+
+
