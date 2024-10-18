@@ -355,11 +355,12 @@ public class FirstPersonController : MonoBehaviour
                 if (canPlay)
                 {
                     canPlay = false;
-                    StartCoroutine(PlayWalk());
+                    StartCoroutine("PlayWalk");
                 }
             }
             else
             {
+                StopCoroutine("PlayWalk");
                 canPlay = true;
             }
 
