@@ -8,6 +8,7 @@ TagManager:
   - Generator
   - Head
   - Torse
+  - Enemy
   layers:
   - Default
   - TransparentFX

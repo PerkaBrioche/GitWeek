@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -9,18 +8,24 @@ public class FollowerEnemy : MonoBehaviour
     public Transform player; // Référence au joueur
     public LayerMask whatIsPlayer; // Masque de couche pour détecter le joueur
     public float followRange; // Portée de suivi
-    public float health = 100f; // Santé initiale de l'ennemi
-
+    public float attackRange; // Portée d'attaque
     private bool playerInRange; // Vérifie si le joueur est dans la portée
+
+    public Animator animator; // Référence à l'Animator pour gérer les animations
+    public bool isDead = false; // Vérifier si l'ennemi est mort
 
     private void Awake()
     {
-        player = GameObject.Find("PlayerCamera").transform; 
+        player = GameObject.Find("PlayerCamera").transform; // Trouver la caméra du joueur
         agent = GetComponent<NavMeshAgent>(); // Récupérer l'agent de navigation
+        animator = GetComponent<Animator>(); // Récupérer l'Animator attaché à l'ennemi
     }
 
     private void Update()
     {
+        // Si l'ennemi est mort, arrêter toute action
+        if (isDead) return;
+
         // Vérifier si le joueur est dans la portée de suivi
         playerInRange = Physics.CheckSphere(transform.position, followRange, whatIsPlayer);
 
@@ -29,6 +34,11 @@ public class FollowerEnemy : MonoBehaviour
         {
             FollowPlayer();
         }
+        else
+        {
+            // Si l'ennemi ne suit pas, passer à l'animation idle (attente)
+            animator.SetBool("isMoving", false);
+        }
     }
 
     // Fonction pour suivre le joueur
@@ -36,25 +46,44 @@ public class FollowerEnemy : MonoBehaviour
     {
         // L'ennemi se déplace vers la position du joueur
         agent.SetDestination(player.position);
+
+        // Activer l'animation de déplacement
+        animator.SetBool("isMoving", true);
     }
 
-    // Fonction pour que l'ennemi prenne des dégâts
-    public void TakeDamage(float damage)
+    // Fonction appelée lorsque l'ennemi est touché
+    public void TakeDamage(string hitTag)
     {
-        health -= damage; // Réduire la santé
+        // Si l'ennemi est déjà mort, ne rien faire
+        if (isDead) return;
 
-        // Si la santé tombe à 0 ou moins, l'ennemi meurt
-        if (health <= 0)
+        // Déterminer quel type d'impact (tête ou torse)
+        if (hitTag == "Head")
         {
-            Die(); // Appeler la fonction de mort
+            // Jouer l'animation de mort par tir dans la tête
+            animator.SetTrigger("dieHead");
+            Die(); // Appeler la fonction de mort après l'animation
+        }
+        else if (hitTag == "Torso")
+        {
+            // Jouer l'animation de mort par tir dans le torse
+            animator.SetTrigger("dieTorso");
+            Die(); // Appeler la fonction de mort après l'animation
         }
     }
 
     // Fonction pour gérer la mort de l'ennemi
     private void Die()
     {
-        // Tu peux ajouter une animation de mort ici avant de détruire l'ennemi
-        Destroy(gameObject); // Détruire l'ennemi
+        // Arrêter tout mouvement
+        agent.SetDestination(transform.position);
+        agent.isStopped = true;
+
+        // Désactiver toute autre action
+        isDead = true;
+
+        // Détruire l'ennemi après un délai (pour permettre l'animation de mort de se jouer)
+        Destroy(gameObject, 3f); // L'ennemi disparaît après 3 secondes
     }
 
     // Fonction pour dessiner des gizmos dans l'éditeur
@@ -64,5 +93,3 @@ public class FollowerEnemy : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, followRange); // Dessiner la portée de suivi
     }
 }
-
-
