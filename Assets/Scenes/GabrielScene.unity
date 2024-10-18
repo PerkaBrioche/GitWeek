@@ -3103,7 +3103,7 @@ MonoBehaviour:
   TRA_BulletOrigin: {fileID: 952848998}
   PART_Impact: {fileID: 6126508840346974606, guid: e08bf980796f4eb4381b3fc5394eb08f, type: 3}
   PART_Electric: {fileID: 6126508840346974606, guid: 07d9624df44bb514d964e59f3a2f3ab6, type: 3}
-  PART_Blood: {fileID: 0}
+  PART_Blood: {fileID: 5659728399570790671, guid: c64a16ae5a3b875478945dff581b5d4f, type: 3}
   PREF_Bullet: {fileID: 4009362129695420333, guid: 11a7414d53a033949b932aeacd99b2fb, type: 3}
 --- !u!114 &1297527013
 MonoBehaviour:
