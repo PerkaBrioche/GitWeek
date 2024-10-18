@@ -11628,7 +11628,7 @@ GameObject:
   - component: {fileID: 802671880}
   - component: {fileID: 802671882}
   - component: {fileID: 802671881}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CrosshairAndStamina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11968,7 +11968,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 952848998}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TRA_Origin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16966,7 +16966,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1023858910}
   - component: {fileID: 1023858911}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: CameraArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17123,6 +17123,67 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   priority: 0
+--- !u!1001 &1157383700
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2080241328408367133, guid: 23f2790a9db303b418f8666e43183332, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080241328408367133, guid: 23f2790a9db303b418f8666e43183332, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1253597
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080241328408367133, guid: 23f2790a9db303b418f8666e43183332, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080241328408367133, guid: 23f2790a9db303b418f8666e43183332, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080241328408367133, guid: 23f2790a9db303b418f8666e43183332, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080241328408367133, guid: 23f2790a9db303b418f8666e43183332, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080241328408367133, guid: 23f2790a9db303b418f8666e43183332, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080241328408367133, guid: 23f2790a9db303b418f8666e43183332, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080241328408367133, guid: 23f2790a9db303b418f8666e43183332, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080241328408367133, guid: 23f2790a9db303b418f8666e43183332, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363361332783402180, guid: 23f2790a9db303b418f8666e43183332, type: 3}
+      propertyPath: m_Name
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585647688499314930, guid: 23f2790a9db303b418f8666e43183332, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1869577266}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 23f2790a9db303b418f8666e43183332, type: 3}
 --- !u!1 &1179739356
 GameObject:
   m_ObjectHideFlags: 0
@@ -17755,7 +17816,7 @@ GameObject:
   - component: {fileID: 1297527011}
   - component: {fileID: 1297527010}
   - component: {fileID: 1297527018}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FirstPersonController
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -18762,7 +18823,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1551425950}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Joint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19598,7 +19659,7 @@ GameObject:
   - component: {fileID: 1869577267}
   - component: {fileID: 1869577269}
   - component: {fileID: 1869577268}
-  m_Layer: 8
+  m_Layer: 3
   m_Name: PlayerCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -20125,3 +20186,4 @@ SceneRoots:
   - {fileID: 864304146}
   - {fileID: 1529543345}
   - {fileID: 844253793}
+  - {fileID: 1157383700}
