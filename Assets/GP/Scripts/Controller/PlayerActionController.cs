@@ -56,7 +56,7 @@ public class PlayerActionController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && CanDash)
         {
-            Dash();
+           // Dash();
         }
 
         if (Input.GetKeyDown("r"))

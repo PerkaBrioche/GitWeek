@@ -15,7 +15,7 @@ MonoBehaviour:
   BOOL_CAC: 0
   STR_WeaponName: Revolver
   INT_BulletclipMax: 6
-  INT_ActualClip: 2
+  INT_ActualClip: 6
   FLO_ReloadingTime: 0.8
   INT_Damage: 20
   FLO_BulletDispersion: 0
@@ -30,6 +30,7 @@ MonoBehaviour:
   - Revolver_Idle
   - Revolver_Shoot
   - Revolver_Reload
+  Texture_Icon: {fileID: 2800000, guid: 009d729a0022dad4aadfefde5102a59a, type: 3}
   LIST_ShootClip:
   - {fileID: 8300000, guid: 6b04b9a14e5897f4aa5b791ebb38fd01, type: 3}
   - {fileID: 8300000, guid: 6d78f09fbebc08647bab99875f87cc9f, type: 3}

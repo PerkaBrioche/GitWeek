@@ -25,6 +25,8 @@ public class WeaponData : ScriptableObject
     public bool OneHanded;
     public List<String> List_AnimName;
 
+    public Texture Texture_Icon;
+
     [Space(10)] [Header("SOUND")] 
     public List<AudioClip> LIST_ShootClip;
     public List<AudioClip> LIST_TickClip;
@@ -35,6 +37,7 @@ public class WeaponData : ScriptableObject
         WeaponData clone = ScriptableObject.CreateInstance<WeaponData>();
         clone.STR_WeaponName = this.STR_WeaponName;
         clone.TEXTURE_IconWeapon = this.TEXTURE_IconWeapon;
+        clone.Texture_Icon = this.Texture_Icon;
         clone.OneHanded = this.OneHanded;
         clone.BOOL_CAC = this.BOOL_CAC;
         clone.INT_BulletclipMax = this.INT_BulletclipMax;

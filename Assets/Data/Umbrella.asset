@@ -30,6 +30,7 @@ MonoBehaviour:
   - Umbrella_Idle
   - Umbrella_Shoot
   - 
+  Texture_Icon: {fileID: 2800000, guid: 0f59771cf1327ad4d9cfc4cb4dfe46b8, type: 3}
   LIST_ShootClip:
   - {fileID: 8300000, guid: d1ef5029ebf74e447b72e0d8dd0dc350, type: 3}
   LIST_TickClip: []
