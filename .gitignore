@@ -10,9 +10,6 @@
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 
-# ignore file DS of macOS
-.DS_Store
-
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
 
