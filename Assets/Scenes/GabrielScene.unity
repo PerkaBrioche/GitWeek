@@ -5160,7 +5160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SLID_Timer: {fileID: 1457063312}
-  FLO_MaxTimer: 10
+  FLO_MaxTimer: 8
   FLO_Multiplier: 0
 --- !u!1 &2094405956
 GameObject:
