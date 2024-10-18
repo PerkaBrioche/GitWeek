@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4466900ef778b194883adf1a5dccc077, type: 3}
+  m_Name: Revolver
+  m_EditorClassIdentifier: 
+  BOOL_CAC: 0
+  STR_WeaponName: Revolver
+  INT_BulletclipMax: 6
+  INT_ActualClip: 6
+  FLO_ReloadingTime: 2
+  INT_Damage: 20
+  FLO_BulletDispersion: 0
+  INT_BulletToShot: 1
+  FLO_TimeBeetweenShoot: 0.8
+  FLO_WeaponRange: 1000
+  ShakeValue: {x: 0.8, y: 0.15}
+  TEXTURE_IconWeapon: {fileID: 0}
+  TEXTURE_RightArm: {fileID: 0}
+  OneHanded: 1
+  LIST_GunAnim: []
+  LIST_ShootClip:
+  - {fileID: 8300000, guid: 6b04b9a14e5897f4aa5b791ebb38fd01, type: 3}
+  - {fileID: 8300000, guid: 6d78f09fbebc08647bab99875f87cc9f, type: 3}
+  - {fileID: 8300000, guid: 699346f3d1942c144b54d6e5da6bde06, type: 3}
+  LIST_TickClip:
+  - {fileID: 8300000, guid: 3ea71f6c60c36224180fdddfd5d456b9, type: 3}
+  LIST_ReloadClip:
+  - {fileID: 8300000, guid: b28a90ded40782f4d95c3439809b5c6f, type: 3}
