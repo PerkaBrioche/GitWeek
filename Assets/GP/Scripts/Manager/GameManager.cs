@@ -42,6 +42,11 @@ public class GameManager : MonoBehaviour
     {
         INT_GeneratorToGet++;
         TMP_TextGenerator.text = INT_GeneratorToGet + "/3";
+
+        if (INT_GeneratorToGet >= 3)
+        {
+            GameObject.Find("Grid_Generator").gameObject.SetActive(false);
+        }
     }
 
     public void ActivateGenerator()

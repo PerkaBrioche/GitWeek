@@ -10,6 +10,9 @@
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 
+# ignore file DS of macOS
+.DS_Store
+
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
 
@@ -61,3 +64,5 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+
+.DS_Store
