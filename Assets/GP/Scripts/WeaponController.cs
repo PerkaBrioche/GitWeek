@@ -27,7 +27,7 @@ public class WeaponController : MonoBehaviour
 
     public void Reaload()
     {
-        if(BOOL_IsReloading || ActualWeapon.BOOL_CAC){return;}
+        if(BOOL_IsReloading){return;}
         
         BOOL_IsReloading = true;
         StartCoroutine(ReloadCoroutine());
@@ -84,13 +84,9 @@ public class WeaponController : MonoBehaviour
     
     private IEnumerator TimeBeetweenShoot()
     {
+        SoundManager.Instance.PlaySound(ActualWeapon.LIST_ReloadClip[Random.Range(0, ActualWeapon.LIST_TickClip.Count)]);
         yield return new WaitForSeconds(ActualWeapon.FLO_TimeBeetweenShoot);
         BOOL_TimingBeetween = false;
-
-        if (!ActualWeapon.BOOL_CAC)
-        {
-            SoundManager.Instance.PlaySound(ActualWeapon.LIST_ReloadClip[Random.Range(0, ActualWeapon.LIST_TickClip.Count)]);
-        }
     }
 
     public bool HasBullet()
