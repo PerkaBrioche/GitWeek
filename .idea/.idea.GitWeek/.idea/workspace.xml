@@ -6,23 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2e0886e1-1837-4af9-863f-1de15a42bd92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GitWeek/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GitWeek/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/Revolver_Reload.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/Revolver_Reload.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/Umbrella_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/Umbrella_Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/Umbrella_Shoot.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/Umbrella_Shoot.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Revolver.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Revolver.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/ShotGun.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/ShotGun.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Umbrella.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Umbrella.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GP/Prefab/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Prefab/Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GP/Prefab/EnemyFollower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Prefab/EnemyFollower.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/PlayerActionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/PlayerActionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Other/WeaponData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Other/WeaponData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WeaponSpawner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/WeaponSpawner.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExitController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExitController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Générateur.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Générateur.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Generator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Generator.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WeaponSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeaponSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CartoonTown SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/CartoonTown SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
