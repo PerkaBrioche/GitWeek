@@ -8,6 +8,7 @@ public class PlayerActionController : MonoBehaviour
 {
     private BulletController bulletController;
     private WeaponController WeaponController;
+    private bool CanPlayTick;
     private FirstPersonController FirstPersonController;
     public float FLO_DashDuration;
     public float FLO_DashCoolDown;
@@ -16,6 +17,9 @@ public class PlayerActionController : MonoBehaviour
     private bool CanDash;
 
     public TrailsController TrailsController;
+
+    public AudioClip CLIP_EmptyMag;
+    public AudioClip CLIP_Dash;
 
     private void Awake()
     {
@@ -33,13 +37,19 @@ public class PlayerActionController : MonoBehaviour
             {
                 SoundManager.Instance.PlaySound(WeaponController.ActualWeapon.LIST_ShootClip[Random.Range(0, WeaponController.ActualWeapon.LIST_ShootClip.Count)]);
                 bulletController.ShootBullet(WeaponController.ActualWeapon);
+                CanPlayTick = true;
                 WeaponController.LaunchShootTime();
+
                 if(WeaponController.ActualWeapon.BOOL_CAC){return;}
                 WeaponController.UpdateClip();
             }
             else
             {
-                // ANIM NO BULLET LEFT || SOUND
+                if (!WeaponController.HasBullet() && CanPlayTick)
+                {
+                    CanPlayTick = false;
+                    StartCoroutine(WaitTick());
+                }
             }
         }
 
@@ -64,7 +74,6 @@ public class PlayerActionController : MonoBehaviour
                 WeaponController.WheelWeapon(-1);
             }    
         }
-
     }
 
     private void Dash()
@@ -83,6 +92,7 @@ public class PlayerActionController : MonoBehaviour
 
     private IEnumerator PlayerDash(Vector3 dashDirection)
     {
+        SoundManager.Instance.PlaySound(CLIP_Dash);
         Rigidbody myRb = GetComponent<Rigidbody>();
         float currentAlpha = 0f;
         float dashDuration = 0.2f; // Durée du dash
@@ -113,6 +123,13 @@ public class PlayerActionController : MonoBehaviour
         CanDash = true;
     }
 
+
+    private IEnumerator WaitTick()
+    {
+        SoundManager.Instance.PlaySound(CLIP_EmptyMag);
+        yield return new WaitForSeconds(0.4f);
+        CanPlayTick = true;
+    }
 
 
 }
