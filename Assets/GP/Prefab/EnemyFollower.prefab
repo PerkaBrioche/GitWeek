@@ -73,8 +73,8 @@ Transform:
   m_GameObject: {fileID: 3229683716980931606}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0, z: 4.420001}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 11.12}
+  m_LocalScale: {x: 1, y: 1, z: 0.77082}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6526615815647268953}
@@ -98,8 +98,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10.44688, y: 1, z: 3.3706856}
-  m_Center: {x: -0.049520493, y: -9.989822e-16, z: -1.0702969}
+  m_Size: {x: 6.542974, y: 1, z: 5.821487}
+  m_Center: {x: 0.3666103, y: -4.2021305e-15, z: -2.2956982}
 --- !u!1 &6055294388686782088
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,7 +124,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6055294388686782088}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -0, z: 4.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -132,7 +132,7 @@ Transform:
   - {fileID: 6649233199705856340}
   - {fileID: 2532655349185416061}
   m_Father: {fileID: 5074675328819969949}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &7184689900148189257
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,8 +161,8 @@ Transform:
   m_GameObject: {fileID: 7184689900148189257}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 3.65}
+  m_LocalScale: {x: 1.3307596, y: 1.3307596, z: -1.734542}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3628267638821933953}
@@ -195,7 +195,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ce925c8c3fb381643a727017c4fca428, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -390,5 +390,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10.44688, y: 1, z: 6.5039353}
-  m_Center: {x: -0.049520493, y: -5.437179e-15, z: -2.382607}
+  m_Size: {x: 7.312376, y: 1, z: 14.209113}
+  m_Center: {x: 0.24400234, y: 9.8782e-16, z: -0.9304881}

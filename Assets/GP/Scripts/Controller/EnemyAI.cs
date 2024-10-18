@@ -10,6 +10,8 @@ public class EnemyAi : MonoBehaviour
     public LayerMask whatIsPlayer;
     public float health; // Santé de l'ennemi
 
+    public Transform TRA_Eye;
+
     // Variables pour l'attaque
     public float timeBetweenAttacks;
     bool alreadyAttacked;
@@ -70,14 +72,13 @@ public class EnemyAi : MonoBehaviour
         if (!alreadyAttacked)
         {
             // Créer le projectile à une position légèrement décalée vers l'avant de l'ennemi pour un meilleur visuel
-            Vector3 spawnPosition = transform.position + transform.forward * 1.5f; // Ajustez selon vos besoins
-            Rigidbody rb = Instantiate(projectile, spawnPosition, Quaternion.identity).GetComponent<Rigidbody>();
+            Rigidbody rb = Instantiate(projectile, TRA_Eye.position, Quaternion.identity).GetComponent<Rigidbody>();
 
             // Viser directement le joueur (si vous voulez viser le corps)
             Vector3 targetPosition = player.position;
 
             // Calculer la direction vers le joueur
-            Vector3 direction = (targetPosition - spawnPosition).normalized;
+            Vector3 direction = (targetPosition - TRA_Eye.position).normalized;
 
             // Appliquer la force au projectile pour qu'il soit tiré directement vers le joueur
             rb.AddForce(direction * 32f, ForceMode.Impulse);

@@ -7,10 +7,14 @@
     <list default="true" id="2e0886e1-1837-4af9-863f-1de15a42bd92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GitWeek/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GitWeek/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ExitController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExitController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Générateur.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Générateur.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Generator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Generator.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GP/Prefab/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Prefab/Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GP/Prefab/EnemyFollower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Prefab/EnemyFollower.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GP/Prefab/Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Prefab/Projectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/EnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/EnemyAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CartoonTown SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/CartoonTown SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +43,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/IConManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/IconController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ListClipWalk.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProjetctileController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TrailsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WeaponSpawner.cs" root0="FORCE_HIGHLIGHTING" />

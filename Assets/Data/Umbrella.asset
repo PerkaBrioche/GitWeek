@@ -17,7 +17,7 @@ MonoBehaviour:
   INT_BulletclipMax: 1
   INT_ActualClip: 1
   FLO_ReloadingTime: 0
-  INT_Damage: 30
+  INT_Damage: 60
   FLO_BulletDispersion: 0
   INT_BulletToShot: 1
   FLO_TimeBeetweenShoot: 0.7

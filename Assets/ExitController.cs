@@ -17,6 +17,8 @@ public class ExitController : MonoBehaviour
                 Application.Quit();
                 return;
             }
+
+            GameManager.Instance.ActivateGenerator();
             SceneManager.LoadScene(SceneIndex);
         }
     }
