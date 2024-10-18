@@ -39,7 +39,6 @@ public class PlayerActionController : MonoBehaviour
                 bulletController.ShootBullet(WeaponController.ActualWeapon);
                 CanPlayTick = true;
                 WeaponController.LaunchShootTime();
-
                 if(WeaponController.ActualWeapon.BOOL_CAC){return;}
                 WeaponController.UpdateClip();
             }
@@ -47,6 +46,7 @@ public class PlayerActionController : MonoBehaviour
             {
                 if (!WeaponController.HasBullet() && CanPlayTick)
                 {
+                    print("PLAY NO BULLET");
                     CanPlayTick = false;
                     StartCoroutine(WaitTick());
                 }

@@ -63,5 +63,15 @@ public class BulletController : MonoBehaviour
             hit.transform.GetComponent<GeneratorController>().LoseLife(damage);
             Instantiate(PART_Electric, hitPosition, hit.transform.rotation);
         }
+
+        if (tag == "Torse" || tag == "Head")
+        {
+            Instantiate(PART_Blood, hitPosition, hit.transform.rotation);
+            if (tag == "Head")
+            {
+                damage *= 2;
+            }
+            hit.transform.GetComponent<EnemyAi>().TakeDamage(damage);
+        }
     }
 }
