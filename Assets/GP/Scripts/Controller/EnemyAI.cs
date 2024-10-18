@@ -96,22 +96,30 @@ public class EnemyAi : MonoBehaviour
     }
 
     // Fonction appelée quand l'ennemi reçoit des dégâts
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, bool HeadShot = false)
     {
         health -= damage;
 
         // Si la santé de l'ennemi tombe à zéro ou moins, il est détruit
         if (health <= 0)
         {
-            Die();
+            Die(HeadShot);
         }
     }
 
     // Fonction pour gérer la mort de l'ennemi
-    public void Die()
+    public void Die(bool HeadShot = false)
     {
         // Logique de mort (animation, son, etc.)
-        Destroy(gameObject); // Détruire l'ennemi
+        TimerManager.Instance.AddToTimer(3.5f);
+
+        if (HeadShot)
+        {
+            TimerManager.Instance.AddToTimer(1);
+            TimeManager.instance.SetTimeFor(0.2f, 0);
+        }
+
+        Destroy(gameObject);
     }
 
     // Fonction pour infliger des dégâts au joueur
@@ -121,12 +129,7 @@ public class EnemyAi : MonoBehaviour
         GameObject playerObj = GameObject.Find("PlayerCamera");
         if (playerObj != null)
         {
-            // Assurez-vous que le joueur a un script pour gérer la santé
-            PlayerHealth playerHealth = playerObj.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
-            {
-                playerHealth.TakeDamage(damage); // Appliquer les dégâts au joueur
-            }
+            TimerManager.Instance.SoustractTimer(2);
         }
     }
 
