@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class WeaponController : MonoBehaviour
 { 
@@ -34,6 +35,7 @@ public class WeaponController : MonoBehaviour
 
     private IEnumerator ReloadCoroutine()
     {
+        SoundManager.Instance.PlaySound(ActualWeapon.LIST_ReloadClip[Random.Range(0, ActualWeapon.LIST_ReloadClip.Count)]);
         yield return new WaitForSeconds(ActualWeapon.FLO_ReloadingTime);
         BOOL_IsReloading = false;
         ActualWeapon.INT_ActualClip = ActualWeapon.INT_BulletclipMax;
@@ -82,6 +84,7 @@ public class WeaponController : MonoBehaviour
     
     private IEnumerator TimeBeetweenShoot()
     {
+        SoundManager.Instance.PlaySound(ActualWeapon.LIST_ReloadClip[Random.Range(0, ActualWeapon.LIST_TickClip.Count)]);
         yield return new WaitForSeconds(ActualWeapon.FLO_TimeBeetweenShoot);
         BOOL_TimingBeetween = false;
     }

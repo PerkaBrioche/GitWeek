@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class PlayerActionController : MonoBehaviour
 {
@@ -28,8 +29,9 @@ public class PlayerActionController : MonoBehaviour
     {
         if (Input.GetMouseButton(0) && WeaponController.HasWeapon())
         {
-            if (WeaponController.HasBullet() && !WeaponController.IsReloading() && !WeaponController.TimingBeetween()) 
+            if (WeaponController.HasBullet() && !WeaponController.IsReloading() && !WeaponController.TimingBeetween())
             {
+                SoundManager.Instance.PlaySound(WeaponController.ActualWeapon.LIST_ShootClip[Random.Range(0, WeaponController.ActualWeapon.LIST_ShootClip.Count)]);
                 bulletController.ShootBullet(WeaponController.ActualWeapon);
                 WeaponController.LaunchShootTime();
                 if(WeaponController.ActualWeapon.BOOL_CAC){return;}

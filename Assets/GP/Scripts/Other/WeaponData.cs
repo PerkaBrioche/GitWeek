@@ -24,6 +24,11 @@ public class WeaponData : ScriptableObject
     public bool OneHanded;
     public List<AnimationClip> LIST_GunAnim;
 
+    [Space(10)] [Header("SOUND")] 
+    public List<AudioClip> LIST_ShootClip;
+    public List<AudioClip> LIST_TickClip;
+    public List<AudioClip> LIST_ReloadClip;
+
     public WeaponData Clone()
     {
         WeaponData clone = ScriptableObject.CreateInstance<WeaponData>();
