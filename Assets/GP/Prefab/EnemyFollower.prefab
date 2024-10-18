@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 146960246396727117}
   m_Layer: 0
   m_Name: EnemyFollower
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -338,7 +338,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   followRange: 15
-  health: 100
+  attackRange: 0
+  animator: {fileID: 0}
+  isDead: 0
 --- !u!1 &7937974348055151668
 GameObject:
   m_ObjectHideFlags: 0
