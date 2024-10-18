@@ -15,9 +15,9 @@ MonoBehaviour:
   BOOL_CAC: 0
   STR_WeaponName: ShotGun
   INT_BulletclipMax: 4
-  INT_ActualClip: 1
+  INT_ActualClip: 4
   FLO_ReloadingTime: 1.2
-  INT_Damage: 20
+  INT_Damage: 10
   FLO_BulletDispersion: 0.3
   INT_BulletToShot: 4
   FLO_TimeBeetweenShoot: 1

@@ -151,7 +151,7 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 8
-  health: 120
+  health: 85
   timeBetweenAttacks: 0.5
   projectile: {fileID: 7711095105381684790, guid: c81277e94c6e4354f977b6ad8834b520, type: 3}
   attackRange: 10

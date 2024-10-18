@@ -338,7 +338,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   followRange: 15
-  health: 100
+  health: 60
 --- !u!1 &7937974348055151668
 GameObject:
   m_ObjectHideFlags: 0

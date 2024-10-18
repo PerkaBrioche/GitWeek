@@ -6,33 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="2e0886e1-1837-4af9-863f-1de15a42bd92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GitWeek/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GitWeek/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/- Arms -.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/- Arms -.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/Shotgun_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/Shotgun_Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/Shotgun_Reload.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/Shotgun_Reload.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/Shotgun_Shoot.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/Shotgun_Shoot.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/Revolver_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/Revolver_Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/Revolver_Reload.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/Revolver_Reload.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/Revolver_Shoot.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/Revolver_Shoot.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/PARAPLUIT_TAP1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/PARAPLUIT_TAP1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/PARAPLUIT_TAP2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/PARAPLUIT_TAP2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/PARAPLUIT_TAP3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/PARAPLUIT_TAP3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/PARAPLUIT_TAP4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/PARAPLUIT_TAP4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/PARAPLUIT_TAP5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/PARAPLUIT_TAP5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/PARAPLUIT_TAP6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/PARAPLUIT_TAP6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/PARAPLUIT_TAP7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/PARAPLUIT_TAP7.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/PARAPLUIT_TAP8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/PARAPLUIT_TAP8.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/PARAPLUIT_TAP9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/PARAPLUI/PARAPLUIT_TAP9.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Revolver.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Revolver.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/ShotGun.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/ShotGun.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/Umbrella.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Umbrella.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GA/ARMELOGO2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GA/ARMELOGO2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GA/ARMEMINIAPARAPLUITE.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GA/ARMEMINIAPARAPLUITE.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GA/ARMEMINIAPISTOL.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GA/ARMEMINIAPISTOL.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GA/VISE.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GA/VISE.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Manager/WeaponManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Manager/WeaponManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IconController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IconController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RAW_WeaponIcon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/RAW_WeaponIcon.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GP/Prefab/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Prefab/Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GP/Prefab/EnemyFollower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Prefab/EnemyFollower.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Others/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Others/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Generator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Generator.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GabrielScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GabrielScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CartoonTown SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/CartoonTown SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
