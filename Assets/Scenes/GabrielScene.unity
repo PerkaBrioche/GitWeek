@@ -1546,6 +1546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftHand: {fileID: 1969789119}
   rightHand: {fileID: 156045322}
+  MiddleHand: {fileID: 223496493}
   smoothness: 8
   movementAmount: 50
 --- !u!95 &651453458

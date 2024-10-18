@@ -6,58 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2e0886e1-1837-4af9-863f-1de15a42bd92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GitWeek/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GitWeek/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE10.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE11.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE12.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE7.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE8.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_RECHARGE9.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_TIRE1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_TIRE1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_TIRE2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_TIRE2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_TIRE3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_TIRE3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_TIRE4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_TIRE4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_TIRE5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_TIRE5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_TIRE6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_TIRE6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_TIRE7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_TIRE7.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_TIRE8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION FUSILS/FUSILS_TIRE8.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MONSTRE1IMAGE1MARCHE.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MONSTRE1IMAGE1MARCHE.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MONSTRE1IMAGE1MORT1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MONSTRE1IMAGE1MORT1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MONSTRE1IMAGE2MARCHE.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MONSTRE1IMAGE2MARCHE.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MONSTRE1IMAGE2MORT1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MONSTRE1IMAGE2MORT1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MONSTRE1IMAGE3MARCHE.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MONSTRE1IMAGE3MARCHE.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MONSTRE1IMAGE3MORT1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MONSTRE1IMAGE3MORT1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MONSTRE1IMAGE4MARCHE.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MONSTRE1IMAGE4MARCHE.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE10.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE11.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE12.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE7.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE8.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_RECHARGE9.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_TIRE1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_TIRE1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_TIRE2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_TIRE2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_TIRE3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_TIRE3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_TIRE4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_TIRE4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_TIRE5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION PISTOLET/PISTOLET_TIRE5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ArmController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ArmController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Revolver.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Revolver.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/ShotGun.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/ShotGun.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Uzi.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Uzi.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/PlayerActionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/PlayerActionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Other/WeaponData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Other/WeaponData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/WeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/WeaponController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HandMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/HandMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Generator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Generator.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GabrielScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GabrielScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
