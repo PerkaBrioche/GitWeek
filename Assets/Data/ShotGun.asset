@@ -15,7 +15,7 @@ MonoBehaviour:
   BOOL_CAC: 0
   STR_WeaponName: ShotGun
   INT_BulletclipMax: 4
-  INT_ActualClip: 3
+  INT_ActualClip: 1
   FLO_ReloadingTime: 1.2
   INT_Damage: 20
   FLO_BulletDispersion: 0.3
@@ -23,7 +23,7 @@ MonoBehaviour:
   FLO_TimeBeetweenShoot: 1
   FLO_WeaponRange: 15
   ShakeValue: {x: 1, y: 0.22}
-  TEXTURE_IconWeapon: {fileID: 0}
+  TEXTURE_IconWeapon: {fileID: 2800000, guid: 96df35d3b78973e4f85f94a56809ecb7, type: 3}
   TEXTURE_RightArm: {fileID: 0}
   OneHanded: 0
   List_AnimName:
