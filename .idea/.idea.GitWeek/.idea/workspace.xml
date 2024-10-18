@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2e0886e1-1837-4af9-863f-1de15a42bd92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GitWeek/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GitWeek/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Uzi.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Uzi.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/BulletController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/BulletController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/PlayerActionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/PlayerActionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/WeaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/WeaponController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Manager/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Manager/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Generator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Generator.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GabrielScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GabrielScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +28,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/CursorManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DeathScreenController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DestroyHimself.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ExitController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GP/Scripts/Controller/PlayerActionController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GP/Scripts/Controller/RotateTowardsPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GP/Scripts/Manager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
