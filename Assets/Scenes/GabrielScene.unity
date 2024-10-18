@@ -17857,6 +17857,7 @@ MonoBehaviour:
   TMP_WeaponName: {fileID: 719113236}
   IConManager: {fileID: 1506591632}
   ArmController: {fileID: 0}
+  CLIP_ChangeWeapon: {fileID: 8300000, guid: e95ddbf4b95892547963d99d810b0736, type: 3}
 --- !u!114 &1297527011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17873,6 +17874,11 @@ MonoBehaviour:
   FLO_DashCoolDown: 1.8
   FLO_DashDistance: 14
   TrailsController: {fileID: 575783243}
+<<<<<<< HEAD
+  CLIP_EmptyMag: {fileID: 8300000, guid: b48fcd8660632e54c8b4630796cfafc6, type: 3}
+  CLIP_Dash: {fileID: 8300000, guid: e2d6c29fe75c97241b975615fdda4db4, type: 3}
+=======
+>>>>>>> origin/Gabriel
 --- !u!114 &1297527012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20077,6 +20083,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 984fe0fa518fc7245946cd3eedcb84ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &2088306744
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1633904753449660961, guid: cdbbb3c35d8e79949820880c971d517e, type: 3}
+      propertyPath: m_Name
+      value: WeaponSpawner (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419428851648673652, guid: cdbbb3c35d8e79949820880c971d517e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419428851648673652, guid: cdbbb3c35d8e79949820880c971d517e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419428851648673652, guid: cdbbb3c35d8e79949820880c971d517e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419428851648673652, guid: cdbbb3c35d8e79949820880c971d517e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419428851648673652, guid: cdbbb3c35d8e79949820880c971d517e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419428851648673652, guid: cdbbb3c35d8e79949820880c971d517e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419428851648673652, guid: cdbbb3c35d8e79949820880c971d517e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419428851648673652, guid: cdbbb3c35d8e79949820880c971d517e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419428851648673652, guid: cdbbb3c35d8e79949820880c971d517e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419428851648673652, guid: cdbbb3c35d8e79949820880c971d517e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6277787463531721592, guid: cdbbb3c35d8e79949820880c971d517e, type: 3}
+      propertyPath: Weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 3fd387e9422c7a842b74dc6692a46d2e, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cdbbb3c35d8e79949820880c971d517e, type: 3}
 --- !u!1 &2088900495
 GameObject:
   m_ObjectHideFlags: 0
@@ -20247,5 +20314,11 @@ SceneRoots:
   - {fileID: 864304146}
   - {fileID: 1529543345}
   - {fileID: 844253793}
+<<<<<<< HEAD
+  - {fileID: 320295153}
+  - {fileID: 926929102}
+  - {fileID: 2088306744}
+=======
   - {fileID: 1157383700}
   - {fileID: 1710737217061099316}
+>>>>>>> origin/Gabriel
