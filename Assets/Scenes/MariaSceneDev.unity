@@ -17190,6 +17190,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4363361332783402180, guid: 23f2790a9db303b418f8666e43183332, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1157383702}
+    - targetCorrespondingSourceObject: {fileID: 4363361332783402180, guid: 23f2790a9db303b418f8666e43183332, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1157383703}
   m_SourcePrefab: {fileID: 100100000, guid: 23f2790a9db303b418f8666e43183332, type: 3}
 --- !u!1 &1157383701 stripped
 GameObject:
@@ -17248,6 +17251,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1157383703
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157383701}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1179739356
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,10 +13,10 @@ public class Projectile : MonoBehaviour
             string hitTag = collision.collider.tag;
 
             // Accéder au script de l'ennemi et lui infliger des dégâts
-            FollowerEnemy enemy = collision.gameObject.GetComponent<FollowerEnemy>();
+            EnemyAi enemy = collision.gameObject.GetComponent<EnemyAi>();
             if (enemy != null)
             {
-                enemy.TakeDamage(hitTag);
+                enemy.TakeDamage(10, hitTag); // Appliquer les dégâts avec le tag de la partie touchée
             }
 
             // Détruire le projectile après l'impact
