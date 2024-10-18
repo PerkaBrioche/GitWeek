@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4466900ef778b194883adf1a5dccc077, type: 3}
   m_Name: ShotGun
   m_EditorClassIdentifier: 
+  BOOL_CAC: 0
   STR_WeaponName: ShotGun
   INT_BulletclipMax: 4
+  INT_ActualClip: 0
   FLO_ReloadingTime: 1.3
   INT_Damage: 10
   FLO_BulletDispersion: 0.3
@@ -21,3 +23,13 @@ MonoBehaviour:
   FLO_TimeBeetweenShoot: 1
   FLO_WeaponRange: 15
   ShakeValue: {x: 1, y: 0.22}
+  TEXTURE_IconWeapon: {fileID: 0}
+  TEXTURE_RightArm: {fileID: 0}
+  OneHanded: 0
+  LIST_GunAnim: []
+  LIST_ShootClip:
+  - {fileID: 8300000, guid: 0789bab5a93433541b1286e1d2827169, type: 3}
+  LIST_TickClip:
+  - {fileID: 8300000, guid: 339fee47761e4b74e9f2d6c126619789, type: 3}
+  LIST_ReloadClip:
+  - {fileID: 8300000, guid: 15d02bb4942e12f4aac923b415541243, type: 3}

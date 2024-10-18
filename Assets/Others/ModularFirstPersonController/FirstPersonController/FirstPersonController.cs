@@ -9,6 +9,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 #if UNITY_EDITOR
     using UnityEditor;
@@ -18,6 +19,8 @@ using UnityEngine.UI;
 public class FirstPersonController : MonoBehaviour
 {
     private Rigidbody rb;
+
+    public List<AudioClip> List_WalkClip;
 
 
     #region Camera Movement Variables
@@ -29,7 +32,7 @@ public class FirstPersonController : MonoBehaviour
     public bool cameraCanMove = true;
     public float mouseSensitivity = 2f;
     public float maxLookAngle = 50f;
-
+    private bool canPlay = true;
     // Crosshair
     public bool lockCursor = true;
     public bool crosshair = true;
@@ -153,6 +156,7 @@ public class FirstPersonController : MonoBehaviour
 
     void Start()
     {
+        List_WalkClip = GetComponent<ListClipWalk>().ClipWalk;
         if(lockCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;
@@ -341,13 +345,32 @@ public class FirstPersonController : MonoBehaviour
         if (playerCanMove)
         {
             // Calculate how fast we should be moving
-            Vector3 targetVelocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+
+            float H = Input.GetAxis("Horizontal");
+            float V = Input.GetAxis("Vertical");
+            Vector3 targetVelocity = new Vector3(H, 0, V);
+
+            if (H != 0 || V != 0)
+            {
+                if (canPlay)
+                {
+                    canPlay = false;
+                    StartCoroutine("PlayWalk");
+                }
+            }
+            else
+            {
+                StopCoroutine("PlayWalk");
+                canPlay = true;
+            }
+
 
             // Checks if player is walking and isGrounded
             // Will allow head bob
             if (targetVelocity.x != 0 || targetVelocity.z != 0 && isGrounded)
             {
                 isWalking = true;
+
             }
             else
             {
@@ -496,6 +519,13 @@ public class FirstPersonController : MonoBehaviour
             joint.localPosition = new Vector3(Mathf.Lerp(joint.localPosition.x, jointOriginalPos.x, Time.deltaTime * bobSpeed), Mathf.Lerp(joint.localPosition.y, jointOriginalPos.y, Time.deltaTime * bobSpeed), Mathf.Lerp(joint.localPosition.z, jointOriginalPos.z, Time.deltaTime * bobSpeed));
         }
     }
+
+    private IEnumerator PlayWalk()
+    {
+        SoundManager.Instance.PlaySound(List_WalkClip[Random.Range(0, List_WalkClip.Count)]);
+        yield return new WaitForSeconds(0.3f);
+        canPlay = true;
+    }
 }
 
 
@@ -519,9 +549,9 @@ public class FirstPersonController : MonoBehaviour
         SerFPC.Update();
 
         EditorGUILayout.Space();
-        GUILayout.Label("Modular First Person Controller", new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontStyle = FontStyle.Bold, fontSize = 16 });
-        GUILayout.Label("By Jess Case", new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontStyle = FontStyle.Normal, fontSize = 12 });
-        GUILayout.Label("version 1.0.1", new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontStyle = FontStyle.Normal, fontSize = 12 });
+        GUILayout.Label("I love you pookie", new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontStyle = FontStyle.Bold, fontSize = 16 });
+        GUILayout.Label("Don't Touch", new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontStyle = FontStyle.Normal, fontSize = 12 });
+        GUILayout.Label("bmboclaa", new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontStyle = FontStyle.Normal, fontSize = 12 });
         EditorGUILayout.Space();
 
         #region Camera Setup
@@ -529,7 +559,7 @@ public class FirstPersonController : MonoBehaviour
         EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
         GUILayout.Label("Camera Setup", new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontStyle = FontStyle.Bold, fontSize = 13 }, GUILayout.ExpandWidth(true));
         EditorGUILayout.Space();
-
+        
         fpc.playerCamera = (Camera)EditorGUILayout.ObjectField(new GUIContent("Camera", "Camera attached to the controller."), fpc.playerCamera, typeof(Camera), true);
         fpc.fov = EditorGUILayout.Slider(new GUIContent("Field of View", "The camera’s view angle. Changes the player camera directly."), fpc.fov, fpc.zoomFOV, 179f);
         fpc.cameraCanMove = EditorGUILayout.ToggleLeft(new GUIContent("Enable Camera Rotation", "Determines if the camera is allowed to move."), fpc.cameraCanMove);
