@@ -70,12 +70,8 @@ public class BulletController : MonoBehaviour
             if (tag == "Head")
             {
                 damage *= 2;
-                hit.transform.GetComponent<EnemyAi>().TakeDamage(damage, true);
             }
-            else
-            {
-                hit.transform.GetComponent<EnemyAi>().TakeDamage(damage);
-            }
+            hit.transform.GetComponent<EnemyAi>().TakeDamage(damage);
         }
     }
 }
