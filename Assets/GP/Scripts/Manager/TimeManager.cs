@@ -31,6 +31,19 @@ public class TimeManager : MonoBehaviour
         StartCoroutine(ResetTimeScaleCoroutine(duration));
     }
 
+    public void SetTimeFor(float CoolDown, float Scale)
+    {
+        StartCoroutine(StopTime(Scale, CoolDown));
+    }
+
+    private IEnumerator StopTime(float targetTimeScale, float Duration)
+    {
+        Time.timeScale = targetTimeScale;
+        yield return new WaitForSecondsRealtime(Duration);
+        Time.timeScale = 1;
+
+    }
+
     private IEnumerator SlowMotionCoroutine(float targetTimeScale, float transitionDuration)
     {
         float currentScale = Time.timeScale;
