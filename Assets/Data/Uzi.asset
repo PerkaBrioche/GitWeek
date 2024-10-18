@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Uzi
   m_EditorClassIdentifier: 
   BOOL_CAC: 0
+  OneHanded: 1
   STR_WeaponName: Uzi
   INT_BulletclipMax: 25
-  INT_ActualClip: 23
   FLO_ReloadingTime: 1.4
   INT_Damage: 8
   FLO_BulletDispersion: 0.1
@@ -23,13 +23,3 @@ MonoBehaviour:
   FLO_TimeBeetweenShoot: 0.09
   FLO_WeaponRange: 20
   ShakeValue: {x: 0.2, y: 0.13}
-  TEXTURE_IconWeapon: {fileID: 0}
-  TEXTURE_RightArm: {fileID: 0}
-  OneHanded: 1
-  LIST_GunAnim: []
-  LIST_ShootClip:
-  - {fileID: 8300000, guid: e5178f3824200994192772218beaa277, type: 3}
-  LIST_TickClip:
-  - {fileID: 8300000, guid: fa8bfe5032be56c438d02e0a706bb1cc, type: 3}
-  LIST_ReloadClip:
-  - {fileID: 8300000, guid: 998b5aaec92be4248b3eec657737c4eb, type: 3}
