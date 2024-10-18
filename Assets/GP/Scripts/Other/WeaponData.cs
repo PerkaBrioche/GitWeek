@@ -22,6 +22,12 @@ public class WeaponData : ScriptableObject
     public Texture TEXTURE_IconWeapon;
     public Texture TEXTURE_RightArm;
     public bool OneHanded;
+    public List<AnimationClip> LIST_GunAnim;
+
+    [Space(10)] [Header("SOUND")] 
+    public List<AudioClip> LIST_ShootClip;
+    public List<AudioClip> LIST_TickClip;
+    public List<AudioClip> LIST_ReloadClip;
 
     public WeaponData Clone()
     {
@@ -40,6 +46,7 @@ public class WeaponData : ScriptableObject
         clone.ShakeValue = this.ShakeValue;
         clone.FLO_WeaponRange = this.FLO_WeaponRange;
         clone.TEXTURE_RightArm = this.TEXTURE_RightArm;
+        clone.LIST_GunAnim = this.LIST_GunAnim;
         return clone;
     }
 }
