@@ -25,6 +25,7 @@ public class BulletController : MonoBehaviour
 
         for (int i = 0; i < Weapon.INT_BulletToShot; i++)
         {
+            print("BULLET SHOOOOTT");
             Ray ray = mainCamera.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2));
 
             Vector3 shootDirection = ray.direction;
@@ -35,6 +36,7 @@ public class BulletController : MonoBehaviour
             Debug.DrawRay(V3_Origin, shootDirection * Weapon.FLO_WeaponRange, Color.red, 1.0f);
             if (Physics.Raycast(V3_Origin, shootDirection, out hit, Weapon.FLO_WeaponRange))
             {
+                print(hit.collider.name);
                 RayTouch(hit, Weapon.INT_Damage, Weapon.BOOL_CAC);
             }
             
@@ -70,11 +72,25 @@ public class BulletController : MonoBehaviour
             if (tag == "Head")
             {
                 damage *= 2;
-                hit.transform.GetComponent<EnemyAi>().TakeDamage(damage, true);
+                if (hit.transform.parent.transform.parent.GetComponent<EnemyAi>())
+                {
+                    hit.transform.parent.transform.parent.GetComponent<EnemyAi>().TakeDamage(damage);
+                }
+                else
+                {
+                    hit.transform.parent.transform.parent.GetComponent<FollowerEnemy>().TakeDamage(damage);
+                }
             }
             else
             {
-                hit.transform.GetComponent<EnemyAi>().TakeDamage(damage);
+                if (hit.transform.parent.transform.parent.GetComponent<EnemyAi>())
+                {
+                    hit.transform.parent.transform.parent.GetComponent<EnemyAi>().TakeDamage(damage);
+                }
+                else
+                {
+                    hit.transform.parent.transform.parent.GetComponent<FollowerEnemy>().TakeDamage(damage);
+                }
             }
         }
     }

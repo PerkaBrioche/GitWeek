@@ -37,6 +37,7 @@ public class WeaponController : MonoBehaviour
 
     private IEnumerator ReloadCoroutine()
     {
+        AnimationManager.Instance.PlayAnim(ActualWeapon.List_AnimName[2]);
         SoundManager.Instance.PlaySound(ActualWeapon.LIST_ReloadClip[Random.Range(0, ActualWeapon.LIST_ReloadClip.Count)]);
         yield return new WaitForSeconds(ActualWeapon.FLO_ReloadingTime);
         BOOL_IsReloading = false;
@@ -68,8 +69,8 @@ public class WeaponController : MonoBehaviour
         BOOL_IsReloading = false;
         IConManager.CheckIncon(INT_WheelWeapon);
         SoundManager.Instance.PlaySound(CLIP_ChangeWeapon);
-
-        //  ArmController.ChangeArmsSkin(ActualWeapon.OneHanded, ActualWeapon.TEXTURE_RightArm);
+        AnimationManager.Instance.PlayAnim(ActualWeapon.List_AnimName[0]);
+        ArmController.ChangeArmsSkin(ActualWeapon.OneHanded);
 
     }
 

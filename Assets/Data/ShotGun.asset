@@ -15,9 +15,9 @@ MonoBehaviour:
   BOOL_CAC: 0
   STR_WeaponName: ShotGun
   INT_BulletclipMax: 4
-  INT_ActualClip: 0
-  FLO_ReloadingTime: 1.3
-  INT_Damage: 10
+  INT_ActualClip: 3
+  FLO_ReloadingTime: 1.2
+  INT_Damage: 20
   FLO_BulletDispersion: 0.3
   INT_BulletToShot: 4
   FLO_TimeBeetweenShoot: 1
@@ -26,7 +26,10 @@ MonoBehaviour:
   TEXTURE_IconWeapon: {fileID: 0}
   TEXTURE_RightArm: {fileID: 0}
   OneHanded: 0
-  LIST_GunAnim: []
+  List_AnimName:
+  - Shotgun_Idle
+  - Shotgun_Shoot
+  - Shotgun_Reload
   LIST_ShootClip:
   - {fileID: 8300000, guid: 0789bab5a93433541b1286e1d2827169, type: 3}
   LIST_TickClip:

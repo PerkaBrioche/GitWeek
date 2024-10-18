@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,7 +23,7 @@ public class WeaponData : ScriptableObject
     public Texture TEXTURE_IconWeapon;
     public Texture TEXTURE_RightArm;
     public bool OneHanded;
-    public List<AnimationClip> LIST_GunAnim;
+    public List<String> List_AnimName;
 
     [Space(10)] [Header("SOUND")] 
     public List<AudioClip> LIST_ShootClip;
@@ -46,7 +47,7 @@ public class WeaponData : ScriptableObject
         clone.ShakeValue = this.ShakeValue;
         clone.FLO_WeaponRange = this.FLO_WeaponRange;
         clone.TEXTURE_RightArm = this.TEXTURE_RightArm;
-        clone.LIST_GunAnim = this.LIST_GunAnim;
+        clone.List_AnimName = this.List_AnimName;
         return clone;
     }
 }
