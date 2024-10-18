@@ -35,6 +35,7 @@ public class PlayerActionController : MonoBehaviour
         {
             if (WeaponController.HasBullet() && !WeaponController.IsReloading() && !WeaponController.TimingBeetween())
             {
+                AnimationManager.Instance.PlayAnim(WeaponController.ActualWeapon.List_AnimName[1]);
                 SoundManager.Instance.PlaySound(WeaponController.ActualWeapon.LIST_ShootClip[Random.Range(0, WeaponController.ActualWeapon.LIST_ShootClip.Count)]);
                 bulletController.ShootBullet(WeaponController.ActualWeapon);
                 CanPlayTick = true;
