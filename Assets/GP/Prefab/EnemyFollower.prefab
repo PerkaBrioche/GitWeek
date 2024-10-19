@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 4069223593801484074}
   - component: {fileID: 9125097384471004992}
   - component: {fileID: 1220776088679563265}
+  - component: {fileID: 2002410939351954337}
   m_Layer: 0
   m_Name: Sprite(Plane)
   m_TagString: Untagged
@@ -239,6 +240,27 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &2002410939351954337
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7184689900148189257}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a25f9b77d6e0bb84bba4e2d73f5e9cab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7449268582220553585
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,6 +361,7 @@ MonoBehaviour:
     m_Bits: 8
   followRange: 15
   health: 40
+  ANIM_Ennemy: {fileID: 2002410939351954337}
 --- !u!1 &7937974348055151668
 GameObject:
   m_ObjectHideFlags: 0

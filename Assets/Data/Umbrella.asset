@@ -21,7 +21,7 @@ MonoBehaviour:
   FLO_BulletDispersion: 0
   INT_BulletToShot: 1
   FLO_TimeBeetweenShoot: 0.7
-  FLO_WeaponRange: 3
+  FLO_WeaponRange: 5
   ShakeValue: {x: 0.1, y: 0.13}
   TEXTURE_IconWeapon: {fileID: 2800000, guid: 0f59771cf1327ad4d9cfc4cb4dfe46b8, type: 3}
   TEXTURE_RightArm: {fileID: 0}

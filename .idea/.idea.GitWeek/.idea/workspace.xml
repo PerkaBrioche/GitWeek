@@ -6,15 +6,47 @@
   <component name="ChangeListManager">
     <list default="true" id="2e0886e1-1837-4af9-863f-1de15a42bd92" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GitWeek/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GitWeek/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MONSTRE1IMAGE1MORT1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MONSTRE1IMAGE1MORT1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MONSTRE1IMAGE2MORT1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MONSTRE1IMAGE2MORT1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MONSTRE1IMAGE3MORT1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MONSTRE1IMAGE3MORT1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MORT_SANS_TETE/MONSTRE1IMAGE1MORT2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MORT_SANS_TETE/MONSTRE1IMAGE1MORT2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MORT_SANS_TETE/MONSTRE1IMAGE2MORT2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MORT_SANS_TETE/MONSTRE1IMAGE2MORT2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MORT_SANS_TETE/MONSTRE1IMAGE3MORT2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MORT_SANS_TETE/MONSTRE1IMAGE3MORT2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MORT_SANS_TETE/MONSTRE1IMAGE4MORT2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ANIMATION MONSTRE1/MORT_SANS_TETE/MONSTRE1IMAGE4MORT2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_Attack01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_Attack01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_Attack02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_Attack02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_Attack03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_Attack03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_Dead01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_Dead01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_Dead02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_Dead02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_Dead03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_Dead03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_DeadNormal01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_DeadNormal01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_DeadNormal02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_DeadNormal02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_DeadNormal03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_DeadNormal03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_Walk01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_Walk01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_Walk02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_Walk02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_Walk03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ani_EnnDis/Ani_EnnDis_Walk03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Umbrella.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Umbrella.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ExitController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExitController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GP/Prefab/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Prefab/Enemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GP/Prefab/EnemyFollower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Prefab/EnemyFollower.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GP/Prefab/Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Prefab/Projectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/BulletController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/BulletController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/EnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/EnemyAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/FollowerEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Controller/FollowerEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Manager/TimeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Manager/TimeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GP/Scripts/Manager/TimerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GP/Scripts/Manager/TimerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemy/MAT_Shoot.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Enemy/MAT_Shoot.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Level 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MenuScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MenuScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MenuScene.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/CartoonTown SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/CartoonTown SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +114,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../../../../../Cartoon Wars\CartoonWars.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\lemer\Bureau\Cartoon Wars" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.45f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\lemer\Bureau\IIM\A2\PROG\C#\Projet\GitWeekFinal\GitWeek -debugCodeOptimization" />
@@ -141,6 +181,7 @@
       <workItem from="1729248479861" duration="1109000" />
       <workItem from="1729249622432" duration="123000" />
       <workItem from="1729253868123" duration="888000" />
+      <workItem from="1729344251997" duration="6224000" />
     </task>
     <servers />
   </component>
@@ -152,5 +193,24 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/GP/Scripts/Controller/BulletController.cs</url>
+          <line>106</line>
+          <properties documentPath="C:\Users\lemer\Bureau\IIM\A2\PROG\C#\Projet\GitWeekFinal\GitWeek\Assets\GP\Scripts\Controller\BulletController.cs" initialLine="94" containingFunctionPresentation="Method 'RayTouch'">
+            <startOffsets>
+              <option value="4086" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4087" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

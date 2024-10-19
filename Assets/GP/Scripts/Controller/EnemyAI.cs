@@ -22,10 +22,12 @@ public class EnemyAi : MonoBehaviour
     public bool playerInAttackRange;
     public float followRange;
 
+    public Animator ANIM_Ennemy;
     private void Awake()
     {
         player = GameObject.Find("PlayerCamera").transform;
         agent = GetComponent<NavMeshAgent>();
+        ANIM_Ennemy = GetComponent<Animator>();
     }
 
     private void Update()
@@ -71,9 +73,11 @@ public class EnemyAi : MonoBehaviour
 
         if (!alreadyAttacked)
         {
+            ANIM_Ennemy.Play("ED_attaque");
+            
             // Créer le projectile à une position légèrement décalée vers l'avant de l'ennemi pour un meilleur visuel
             Rigidbody rb = Instantiate(projectile, TRA_Eye.position, Quaternion.identity).GetComponent<Rigidbody>();
-
+            
             // Viser directement le joueur (si vous voulez viser le corps)
             Vector3 targetPosition = player.position;
 
@@ -113,10 +117,17 @@ public class EnemyAi : MonoBehaviour
     {
         if (HeadShot)
         {
+            ANIM_Ennemy.Play("ED_HeasShot");
             TimerManager.Instance.AddToTimer(1);
         }
+        else
+        {
+            ANIM_Ennemy.Play("ED_TorseDead");
+        }
+
+        this.enabled = false;
         TimerManager.Instance.AddToTimer(3.5f);
-        Destroy(gameObject);
+        Destroy(gameObject, 1);
     }
 
     public void InflictDamageToPlayer(int damage)
@@ -130,6 +141,18 @@ public class EnemyAi : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, attackRange); // Rayon pour la portée d'attaque
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, followRange); // Rayon pour la portée de suivi
+    }
+
+    public bool IsDead(int Damage)
+    {
+        var alife = health;
+        var cl = alife - Damage;
+        if (cl <= 0)
+        {
+            return true;
+        }
+
+        return false;
     }
 
 }

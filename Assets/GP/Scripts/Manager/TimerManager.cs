@@ -13,6 +13,7 @@ public class TimerManager : MonoBehaviour
     public float FLO_Multiplier;
 
     public static TimerManager Instance;
+    public Animation ANIMATION_Slid;
     private void Awake()
     {
         if (Instance == null)
@@ -63,6 +64,7 @@ public class TimerManager : MonoBehaviour
     public void AddToTimer(float TimeToAdd)
     {
         SLID_Timer.value += TimeToAdd;
+        ANIMATION_Slid.Play();
     }
     
     public void SoustractTimer(float TimeToSub)
