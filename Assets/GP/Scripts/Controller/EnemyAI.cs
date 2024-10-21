@@ -5,30 +5,29 @@ using UnityEngine.AI;
 
 public class EnemyAi : MonoBehaviour
 {
-    public NavMeshAgent agent; 
+    public NavMeshAgent agent;
+    public Transform player;
+    public LayerMask whatIsPlayer;
+    public float health; // Santé de l'ennemi
 
-    public Transform player; 
-
-    public LayerMask whatIsPlayer; 
-
-    public float health; // Santé de l'ennemi, pour plus tard
+    public Transform TRA_Eye;
 
     // Variables pour l'attaque
-    public float timeBetweenAttacks; 
-    bool alreadyAttacked; 
-    public GameObject projectile; 
+    public float timeBetweenAttacks;
+    bool alreadyAttacked;
+    public GameObject projectile;
 
     // Variables pour les états de l'ennemi
-    public float attackRange; 
-    public bool playerInAttackRange; 
-
+    public float attackRange;
+    public bool playerInAttackRange;
     public float followRange;
 
+    public Animator ANIM_Ennemy;
     private void Awake()
     {
         player = GameObject.Find("PlayerCamera").transform;
-
         agent = GetComponent<NavMeshAgent>();
+        ANIM_Ennemy = GetComponent<Animator>();
     }
 
     private void Update()
@@ -43,13 +42,13 @@ public class EnemyAi : MonoBehaviour
             FollowPlayer();
         }
 
-        // Si le joueur est à portée d'attaque mais que l'ennemi n'est pas assez proche, l'ennemi continue à le suivre
+        // Si le joueur est à portée d'attaque, l'ennemi attaque ou suit
         if (playerInAttackRange && playerInFollowRange)
         {
-            // Si l'ennemi est assez proche (dans la portée d'attaque), il attaque
+            // Vérifier la distance pour savoir s'il faut suivre ou attaquer
             if (Vector3.Distance(transform.position, player.position) > attackRange * 0.75f)
             {
-                FollowPlayer(); // Continue de suivre si l'ennemi est encore trop loin pour une attaque optimale
+                FollowPlayer(); // Continue de suivre si l'ennemi est trop loin pour une attaque optimale
             }
             else
             {
@@ -58,30 +57,34 @@ public class EnemyAi : MonoBehaviour
         }
     }
 
-
-    // Fonction pour suivre le joueur quand il est à portée de suivi
+    // Fonction pour suivre le joueur
     private void FollowPlayer()
     {
         // L'ennemi se déplace vers la position du joueur
         agent.SetDestination(player.position);
     }
 
-    // Fonction pour attaquer le joueur quand il est à portée d'attaque
+    // Fonction pour attaquer le joueur
+    // Fonction pour attaquer le joueur
     private void AttackPlayer()
     {
         // L'ennemi arrête de bouger lorsqu'il attaque
         agent.SetDestination(transform.position);
 
-        // L'ennemi se tourne vers le joueur
-        transform.LookAt(player);
-
         if (!alreadyAttacked)
         {
-            // Créer le projectile et le lancer vers le joueur
-            Rigidbody rb = Instantiate(projectile, transform.position + transform.forward, Quaternion.identity).GetComponent<Rigidbody>();
+            ANIM_Ennemy.Play("ED_attaque");
+            
+            // Créer le projectile à une position légèrement décalée vers l'avant de l'ennemi pour un meilleur visuel
+            Rigidbody rb = Instantiate(projectile, TRA_Eye.position, Quaternion.identity).GetComponent<Rigidbody>();
+            
+            // Viser directement le joueur (si vous voulez viser le corps)
+            Vector3 targetPosition = player.position;
 
-            // Tirer le projectile directement vers le joueur
-            Vector3 direction = (player.position - transform.position).normalized;
+            // Calculer la direction vers le joueur
+            Vector3 direction = (targetPosition - TRA_Eye.position).normalized;
+
+            // Appliquer la force au projectile pour qu'il soit tiré directement vers le joueur
             rb.AddForce(direction * 32f, ForceMode.Impulse);
 
             // Délai avant la prochaine attaque
@@ -90,25 +93,46 @@ public class EnemyAi : MonoBehaviour
         }
     }
 
-    // Réinitialise la capacité d'attaque après un délai, pour plus tard
+
+    // Réinitialise la capacité d'attaque après un délai
     private void ResetAttack()
     {
         alreadyAttacked = false;
     }
 
-    // Fonction appelée quand l'ennemi reçoit des dégâts, pour plus tard
-    public void TakeDamage(int damage)
+    // Fonction appelée quand l'ennemi reçoit des dégâts
+    public void TakeDamage(int damage, bool HeadShot = false)
     {
         health -= damage;
 
         // Si la santé de l'ennemi tombe à zéro ou moins, il est détruit
-        if (health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
+        if (health <= 0)
+        {
+            Die(HeadShot);
+        }
     }
 
-    // Détruit l'ennemi, pour plus tard
-    private void DestroyEnemy()
+    // Fonction pour gérer la mort de l'ennemi
+    public void Die(bool HeadShot = false)
     {
-        Destroy(gameObject);
+        if (HeadShot)
+        {
+            ANIM_Ennemy.Play("ED_HeasShot");
+            TimerManager.Instance.AddToTimer(1);
+        }
+        else
+        {
+            ANIM_Ennemy.Play("ED_TorseDead");
+        }
+
+        this.enabled = false;
+        TimerManager.Instance.AddToTimer(3.5f);
+        Destroy(gameObject, 1);
+    }
+
+    public void InflictDamageToPlayer(int damage)
+    {
+        TimerManager.Instance.SoustractTimer(2);
     }
 
     private void OnDrawGizmosSelected()
@@ -118,6 +142,19 @@ public class EnemyAi : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, followRange); // Rayon pour la portée de suivi
     }
+
+    public bool IsDead(int Damage)
+    {
+        var alife = health;
+        var cl = alife - Damage;
+        if (cl <= 0)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
 }
 
 

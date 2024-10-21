@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,12 +23,21 @@ public class WeaponData : ScriptableObject
     public Texture TEXTURE_IconWeapon;
     public Texture TEXTURE_RightArm;
     public bool OneHanded;
+    public List<String> List_AnimName;
+
+    public Texture Texture_Icon;
+
+    [Space(10)] [Header("SOUND")] 
+    public List<AudioClip> LIST_ShootClip;
+    public List<AudioClip> LIST_TickClip;
+    public List<AudioClip> LIST_ReloadClip;
 
     public WeaponData Clone()
     {
         WeaponData clone = ScriptableObject.CreateInstance<WeaponData>();
         clone.STR_WeaponName = this.STR_WeaponName;
         clone.TEXTURE_IconWeapon = this.TEXTURE_IconWeapon;
+        clone.Texture_Icon = this.Texture_Icon;
         clone.OneHanded = this.OneHanded;
         clone.BOOL_CAC = this.BOOL_CAC;
         clone.INT_BulletclipMax = this.INT_BulletclipMax;
@@ -40,6 +50,7 @@ public class WeaponData : ScriptableObject
         clone.ShakeValue = this.ShakeValue;
         clone.FLO_WeaponRange = this.FLO_WeaponRange;
         clone.TEXTURE_RightArm = this.TEXTURE_RightArm;
+        clone.List_AnimName = this.List_AnimName;
         return clone;
     }
 }

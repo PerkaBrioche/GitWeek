@@ -10,6 +10,8 @@ public class BulletController : MonoBehaviour
     public GameObject PART_Electric;
     public GameObject PART_Blood;
     public GameObject PREF_Bullet;
+    public GameObject PART_Splash;
+    public AudioClip CLIP_Spalsh;
     
     private void Start()
     {
@@ -25,6 +27,7 @@ public class BulletController : MonoBehaviour
 
         for (int i = 0; i < Weapon.INT_BulletToShot; i++)
         {
+            print("BULLET SHOOOOTT");
             Ray ray = mainCamera.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2));
 
             Vector3 shootDirection = ray.direction;
@@ -62,6 +65,47 @@ public class BulletController : MonoBehaviour
             if (cac){ damage *= 2;}
             hit.transform.GetComponent<GeneratorController>().LoseLife(damage);
             Instantiate(PART_Electric, hitPosition, hit.transform.rotation);
+        }
+
+        if (tag == "Torse" || tag == "Head")
+        {
+            Instantiate(PART_Blood, hitPosition, hit.transform.rotation);
+            if (tag == "Head")
+            {
+                damage *= 2;
+                if (hit.transform.parent.transform.parent.GetComponent<EnemyAi>() != null)
+                {
+                    if (hit.transform.parent.transform.parent.GetComponent<EnemyAi>().IsDead(damage))
+                    {
+                        Instantiate(PART_Splash, hitPosition, hit.transform.rotation);
+                        SoundManager.Instance.PlaySound(CLIP_Spalsh);
+                        TimeManager.instance.SetTime(0, 0.3f);
+                    }
+                    hit.transform.parent.transform.parent.GetComponent<EnemyAi>().TakeDamage(damage, true);
+                }
+                else
+                {
+                    if (hit.transform.parent.transform.parent.GetComponent<FollowerEnemy>().IsDead(damage))
+                    {
+                        Instantiate(PART_Splash, hitPosition, hit.transform.rotation);
+                        SoundManager.Instance.PlaySound(CLIP_Spalsh);
+                        TimeManager.instance.SetTime(0, 0.3f);
+                    }
+                    hit.transform.parent.transform.parent.GetComponent<FollowerEnemy>().TakeDamage(damage, true);
+
+                }
+            }
+            else
+            {
+                if (hit.transform.parent.transform.parent.GetComponent<EnemyAi>())
+                {
+                    hit.transform.parent.transform.parent.GetComponent<EnemyAi>().TakeDamage(damage);
+                }
+                else
+                {
+                    hit.transform.parent.transform.parent.GetComponent<FollowerEnemy>().TakeDamage(damage);
+                }
+            }
         }
     }
 }

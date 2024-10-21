@@ -15,6 +15,10 @@ public class IconController : MonoBehaviour
         StopSurbrillance();
     }
 
+    public void SetIcon(Texture texture)
+    {
+        RAW_Icon.texture = texture;
+    }
     public void Surbrillance()
     {
         RAW_Icon.color = new Color(255/255, 255/255, 255/255, 0.7f);

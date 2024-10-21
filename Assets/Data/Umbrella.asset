@@ -13,13 +13,25 @@ MonoBehaviour:
   m_Name: Umbrella
   m_EditorClassIdentifier: 
   BOOL_CAC: 1
-  OneHanded: 1
   STR_WeaponName: Umbrella
   INT_BulletclipMax: 1
+  INT_ActualClip: 1
   FLO_ReloadingTime: 0
-  INT_Damage: 20
+  INT_Damage: 60
   FLO_BulletDispersion: 0
   INT_BulletToShot: 1
   FLO_TimeBeetweenShoot: 0.7
-  FLO_WeaponRange: 3
+  FLO_WeaponRange: 5
   ShakeValue: {x: 0.1, y: 0.13}
+  TEXTURE_IconWeapon: {fileID: 2800000, guid: 0f59771cf1327ad4d9cfc4cb4dfe46b8, type: 3}
+  TEXTURE_RightArm: {fileID: 0}
+  OneHanded: 1
+  List_AnimName:
+  - Umbrella_Idle
+  - Umbrella_Shoot
+  - 
+  Texture_Icon: {fileID: 2800000, guid: 0f59771cf1327ad4d9cfc4cb4dfe46b8, type: 3}
+  LIST_ShootClip:
+  - {fileID: 8300000, guid: d1ef5029ebf74e447b72e0d8dd0dc350, type: 3}
+  LIST_TickClip: []
+  LIST_ReloadClip: []

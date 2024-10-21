@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class WeaponController : MonoBehaviour
 { 
@@ -19,6 +20,8 @@ public class WeaponController : MonoBehaviour
 
     public ArmController ArmController;
 
+    public AudioClip CLIP_ChangeWeapon;
+
     private void Start()
     {
         ArmController = FindObjectOfType<ArmController>();
@@ -26,7 +29,7 @@ public class WeaponController : MonoBehaviour
 
     public void Reaload()
     {
-        if(BOOL_IsReloading){return;}
+        if(BOOL_IsReloading || ActualWeapon.BOOL_CAC){return;}
         
         BOOL_IsReloading = true;
         StartCoroutine(ReloadCoroutine());
@@ -34,6 +37,8 @@ public class WeaponController : MonoBehaviour
 
     private IEnumerator ReloadCoroutine()
     {
+        AnimationManager.Instance.PlayAnim(ActualWeapon.List_AnimName[2]);
+        SoundManager.Instance.PlaySound(ActualWeapon.LIST_ReloadClip[Random.Range(0, ActualWeapon.LIST_ReloadClip.Count)]);
         yield return new WaitForSeconds(ActualWeapon.FLO_ReloadingTime);
         BOOL_IsReloading = false;
         ActualWeapon.INT_ActualClip = ActualWeapon.INT_BulletclipMax;
@@ -58,14 +63,17 @@ public class WeaponController : MonoBehaviour
     public void ChangeWeapon(WeaponData NewWeapon)
     {
         ActualWeapon = NewWeapon;
+        BOOL_TimingBeetween = false;
+        BOOL_IsReloading = false;
         UpdateClip(0);
         TMP_WeaponName.text = ActualWeapon.STR_WeaponName;
         StopAllCoroutines();
         BOOL_IsReloading = false;
         IConManager.CheckIncon(INT_WheelWeapon);
-        
-      //  ArmController.ChangeArmsSkin(ActualWeapon.OneHanded, ActualWeapon.TEXTURE_RightArm);
-        
+        SoundManager.Instance.PlaySound(CLIP_ChangeWeapon);
+        AnimationManager.Instance.PlayAnim(ActualWeapon.List_AnimName[0]);
+        ArmController.ChangeArmsSkin(ActualWeapon.OneHanded);
+
     }
 
     public void UpdateClip(int ClipToSuppr = 1)
@@ -82,8 +90,13 @@ public class WeaponController : MonoBehaviour
     
     private IEnumerator TimeBeetweenShoot()
     {
+        if (!ActualWeapon.BOOL_CAC)
+        {
+            SoundManager.Instance.PlaySound(ActualWeapon.LIST_TickClip[Random.Range(0, ActualWeapon.LIST_TickClip.Count)]);
+        }
         yield return new WaitForSeconds(ActualWeapon.FLO_TimeBeetweenShoot);
         BOOL_TimingBeetween = false;
+
     }
 
     public bool HasBullet()
