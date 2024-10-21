@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
         PlayerActionController.enabled = false;
         Cursor.lockState = CursorLockMode.Confined;
         FirstPersonController.transform.GetComponent<Rigidbody>().isKinematic = true;
+        GameObject.FindGameObjectWithTag("Heart").transform.GetChild(0).gameObject.SetActive(true);
     }
 
     public void IncremantGenerator()

@@ -6,11 +6,13 @@ using UnityEngine.Events;
 public class BulletController : MonoBehaviour
 {
     public Transform TRA_BulletOrigin;
+    public Transform TRA_PowOrigin;
     public GameObject PART_Impact;
     public GameObject PART_Electric;
     public GameObject PART_Blood;
     public GameObject PREF_Bullet;
     public GameObject PART_Splash;
+    public GameObject PART_POW;
     public AudioClip CLIP_Spalsh;
     
     private void Start()
@@ -43,6 +45,7 @@ public class BulletController : MonoBehaviour
             
             if(Weapon.BOOL_CAC){return;}
             var Bullet = Instantiate(PREF_Bullet, TRA_BulletOrigin.position, transform.rotation);
+            Instantiate(PART_POW, TRA_PowOrigin.position, transform.rotation);
             Bullet.GetComponent<Bullet>().StartBullet(shootDirection);
  
         }

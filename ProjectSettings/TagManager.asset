@@ -8,6 +8,8 @@ TagManager:
   - Generator
   - Head
   - Torse
+  - FxTemporaire
+  - Heart
   layers:
   - Default
   - TransparentFX

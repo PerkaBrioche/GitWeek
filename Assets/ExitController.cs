@@ -12,12 +12,12 @@ public class ExitController : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            if (SceneIndex == 3)
+            if (SceneIndex == 0)
             {
-                Application.Quit();
-                return;
+                Cursor.lockState = CursorLockMode.Confined;
             }
 
+            
             GameManager.Instance.ActivateGenerator();
             SceneManager.LoadScene(SceneIndex);
         }
