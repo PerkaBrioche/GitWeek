@@ -10,6 +10,8 @@ public class BulletController : MonoBehaviour
     public GameObject PART_Electric;
     public GameObject PART_Blood;
     public GameObject PREF_Bullet;
+    public GameObject PART_Splash;
+    public AudioClip CLIP_Spalsh;
     
     private void Start()
     {
@@ -36,7 +38,6 @@ public class BulletController : MonoBehaviour
             Debug.DrawRay(V3_Origin, shootDirection * Weapon.FLO_WeaponRange, Color.red, 1.0f);
             if (Physics.Raycast(V3_Origin, shootDirection, out hit, Weapon.FLO_WeaponRange))
             {
-                print(hit.collider.name);
                 RayTouch(hit, Weapon.INT_Damage, Weapon.BOOL_CAC);
             }
             
@@ -72,13 +73,26 @@ public class BulletController : MonoBehaviour
             if (tag == "Head")
             {
                 damage *= 2;
-                if (hit.transform.parent.transform.parent.GetComponent<EnemyAi>())
+                if (hit.transform.parent.transform.parent.GetComponent<EnemyAi>() != null)
                 {
-                    hit.transform.parent.transform.parent.GetComponent<EnemyAi>().TakeDamage(damage);
+                    if (hit.transform.parent.transform.parent.GetComponent<EnemyAi>().IsDead(damage))
+                    {
+                        Instantiate(PART_Splash, hitPosition, hit.transform.rotation);
+                        SoundManager.Instance.PlaySound(CLIP_Spalsh);
+                        TimeManager.instance.SetTime(0, 0.3f);
+                    }
+                    hit.transform.parent.transform.parent.GetComponent<EnemyAi>().TakeDamage(damage, true);
                 }
                 else
                 {
-                    hit.transform.parent.transform.parent.GetComponent<FollowerEnemy>().TakeDamage(damage);
+                    if (hit.transform.parent.transform.parent.GetComponent<FollowerEnemy>().IsDead(damage))
+                    {
+                        Instantiate(PART_Splash, hitPosition, hit.transform.rotation);
+                        SoundManager.Instance.PlaySound(CLIP_Spalsh);
+                        TimeManager.instance.SetTime(0, 0.3f);
+                    }
+                    hit.transform.parent.transform.parent.GetComponent<FollowerEnemy>().TakeDamage(damage, true);
+
                 }
             }
             else

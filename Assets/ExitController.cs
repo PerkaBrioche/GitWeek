@@ -12,6 +12,13 @@ public class ExitController : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            if (SceneIndex == 3)
+            {
+                Application.Quit();
+                return;
+            }
+
+            GameManager.Instance.ActivateGenerator();
             SceneManager.LoadScene(SceneIndex);
         }
     }

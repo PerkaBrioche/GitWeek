@@ -30,7 +30,8 @@ public class WeaponManager : MonoBehaviour
     }
     public void NewWeapon(WeaponData weapon)
     {
-        Instantiate(GO_Icon, TRA_Horizontal);
+        var Incon = Instantiate(GO_Icon, TRA_Horizontal);
+        Incon.GetComponent<IconController>().SetIcon(weapon.TEXTURE_IconWeapon);
         WeaponController.UpdateWeapon(weapon);
     }
 }

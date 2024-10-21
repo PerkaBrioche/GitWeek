@@ -7,6 +7,11 @@ public class WeaponSpawner : MonoBehaviour
 {
     public WeaponData Weapon;
 
+    private void Start()
+    {
+        var MyMat = GetComponent<MeshRenderer>().material.mainTexture = Weapon.Texture_Icon;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")

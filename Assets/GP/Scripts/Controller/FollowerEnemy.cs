@@ -6,25 +6,26 @@ using UnityEngine.AI;
 public class FollowerEnemy : MonoBehaviour
 {
     public NavMeshAgent agent; // L'agent de navigation pour l'ennemi
-    public Transform player; // Référence au joueur
-    public LayerMask whatIsPlayer; // Masque de couche pour détecter le joueur
-    public float followRange; // Portée de suivi
-    public float health = 100f; // Santé initiale de l'ennemi
+    public Transform player; // Rï¿½fï¿½rence au joueur
+    public LayerMask whatIsPlayer; // Masque de couche pour dï¿½tecter le joueur
+    public float followRange; // Portï¿½e de suivi
+    public float health = 100f; // Santï¿½ initiale de l'ennemi
 
-    private bool playerInRange; // Vérifie si le joueur est dans la portée
+    private bool playerInRange; // Vï¿½rifie si le joueur est dans la portï¿½e
+    public Animator ANIM_Ennemy; // Vï¿½rifie si le joueur est dans la portï¿½e
 
     private void Awake()
     {
         player = GameObject.Find("PlayerCamera").transform; 
-        agent = GetComponent<NavMeshAgent>(); // Récupérer l'agent de navigation
+        agent = GetComponent<NavMeshAgent>(); // Rï¿½cupï¿½rer l'agent de navigation
     }
 
     private void Update()
     {
-        // Vérifier si le joueur est dans la portée de suivi
+        // Vï¿½rifier si le joueur est dans la portï¿½e de suivi
         playerInRange = Physics.CheckSphere(transform.position, followRange, whatIsPlayer);
 
-        // Si le joueur est dans la portée, suivre
+        // Si le joueur est dans la portï¿½e, suivre
         if (playerInRange)
         {
             FollowPlayer();
@@ -34,34 +35,61 @@ public class FollowerEnemy : MonoBehaviour
     // Fonction pour suivre le joueur
     private void FollowPlayer()
     {
-        // L'ennemi se déplace vers la position du joueur
+        // L'ennemi se dï¿½place vers la position du joueur
         agent.SetDestination(player.position);
     }
 
-    // Fonction pour que l'ennemi prenne des dégâts
-    public void TakeDamage(float damage)
+    // Fonction pour que l'ennemi prenne des dï¿½gï¿½ts
+    // Fonction appelÃ©e quand l'ennemi reÃ§oit des dÃ©gÃ¢ts
+    public void TakeDamage(int damage, bool HeadShot = false)
     {
-        health -= damage; // Réduire la santé
+        health -= damage;
 
-        // Si la santé tombe à 0 ou moins, l'ennemi meurt
+        // Si la santÃ© de l'ennemi tombe Ã  zÃ©ro ou moins, il est dÃ©truit
         if (health <= 0)
         {
-            Die(); // Appeler la fonction de mort
+            Die(HeadShot);
         }
     }
 
-    // Fonction pour gérer la mort de l'ennemi
-    private void Die()
+    // Fonction pour gÃ©rer la mort de l'ennemi
+    public void Die(bool HeadShot = false)
     {
-        // Tu peux ajouter une animation de mort ici avant de détruire l'ennemi
-        Destroy(gameObject); // Détruire l'ennemi
+        print("DIEEEEEEEEEEEEEEEE");
+        if (HeadShot)
+        {
+            ANIM_Ennemy.Play("EF_DeadHead");
+            TimerManager.Instance.AddToTimer(1);
+        }
+        else
+        {
+            ANIM_Ennemy.Play("EF_DeadTorse");
+        }
+
+        this.enabled = false;
+
+        TimerManager.Instance.AddToTimer(3.5f);
+        Destroy(gameObject, 1);
     }
 
-    // Fonction pour dessiner des gizmos dans l'éditeur
+    // Fonction pour dessiner des gizmos dans l'ï¿½diteur
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, followRange); // Dessiner la portée de suivi
+        Gizmos.DrawWireSphere(transform.position, followRange); // Dessiner la portï¿½e de suivi
+    }
+    
+    public bool IsDead(int Damage)
+    {
+        var alife = health;
+        var cl = alife - Damage;
+        print(cl);
+        if (cl <= 0)
+        {
+            return true;
+        }
+
+        return false;
     }
 }
 

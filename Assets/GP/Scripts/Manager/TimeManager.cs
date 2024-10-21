@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TimeManager : MonoBehaviour
@@ -29,6 +30,19 @@ public class TimeManager : MonoBehaviour
     public void ResetTimeScale(float duration)
     {
         StartCoroutine(ResetTimeScaleCoroutine(duration));
+    }
+
+    public void SetTime(float Scale, float Duration)
+    {
+        StartCoroutine(SetTimeCoroutine(Scale, Duration));
+    }
+
+    private IEnumerator SetTimeCoroutine(float targetTimeScale, float transitionDuration)
+    {
+        Time.timeScale = targetTimeScale;
+        yield return new WaitForSecondsRealtime(transitionDuration);
+        Time.timeScale =1f;
+
     }
 
     private IEnumerator SlowMotionCoroutine(float targetTimeScale, float transitionDuration)

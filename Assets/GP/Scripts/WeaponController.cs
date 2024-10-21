@@ -63,6 +63,8 @@ public class WeaponController : MonoBehaviour
     public void ChangeWeapon(WeaponData NewWeapon)
     {
         ActualWeapon = NewWeapon;
+        BOOL_TimingBeetween = false;
+        BOOL_IsReloading = false;
         UpdateClip(0);
         TMP_WeaponName.text = ActualWeapon.STR_WeaponName;
         StopAllCoroutines();
