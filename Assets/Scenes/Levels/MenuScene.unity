@@ -1452,7 +1452,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Catoon wars
+  m_text: Cartoon wars
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1b6fe3cc3583d0f418bc2f497121af88, type: 2}
   m_sharedMaterial: {fileID: 3879785702200134826, guid: 1b6fe3cc3583d0f418bc2f497121af88, type: 2}
